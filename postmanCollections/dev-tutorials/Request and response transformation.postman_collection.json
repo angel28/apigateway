@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "afb3aacb-bcf6-48ba-9982-ebfd03380096",
+		"name": "Request and response transformation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Request tranformation",
+			"item": [
+				{
+					"name": "http://single4.gateway.webmcloud.com/gateway/EmployeeManagementService/3.0",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Test123$",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "single4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-Gateway-APIKey",
+								"value": "06a49dd2-ef4d-4b2d-a934-85851ed38033",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/gateway/EmployeeManagementService/3.0",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"gateway",
+								"EmployeeManagementService",
+								"3.0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://single4.gateway.webmcloud.com/gateway/EmployeeManagementService/3.0",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Test123$",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "single4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-Gateway-APIKey",
+								"value": "06a49dd2-ef4d-4b2d-a934-85851ed38033",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"empId\": 2,\n            \"empName\": \"Mugesh\",\n            \"designation\": \"Intern\",\n            \"profilePicName\": null,\n            \"profileDocName\": null\n        }"
+						},
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/gateway/EmployeeManagementService/3.0",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"gateway",
+								"EmployeeManagementService",
+								"3.0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://single4.gateway.webmcloud.com/gateway/EmployeeManagementService/3.0",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Test123$",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "single4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-Gateway-APIKey",
+								"value": "06a49dd2-ef4d-4b2d-a934-85851ed38033",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/gateway/EmployeeManagementService/3.0",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"gateway",
+								"EmployeeManagementService",
+								"3.0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Response transformation",
+			"item": [
+				{
+					"name": "http://single4.gateway.webmcloud.com/gateway/EmployeeManagementService/3.1",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Test123$",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "single4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-Gateway-APIKey",
+								"value": "06a49dd2-ef4d-4b2d-a934-85851ed38033  ",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/gateway/EmployeeManagementService/3.1",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"gateway",
+								"EmployeeManagementService",
+								"3.1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
