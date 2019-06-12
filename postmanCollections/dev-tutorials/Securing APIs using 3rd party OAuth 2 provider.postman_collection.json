@@ -1,0 +1,268 @@
+{
+	"info": {
+		"_postman_id": "8f1209ab-624a-4a4a-82b3-a09c3a190d30",
+		"name": "Securing APIs using 3rd party OAuth 2 provider",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": " Invoking the OAuth 2 protected API ",
+			"item": [
+				{
+					"name": "View Ticket",
+					"item": [
+						{
+							"name": "http://single4.gateway.webmcloud.com/gateway/Time%20travels/2.0.0/booking",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "accessToken",
+											"value": "eyJraWQiOiJYS1NNTFo5TDN2VHBTbjI4R3F6TFB4QnBPcDA5UE5jTk0wRTYtZTNZY3ZJIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULnhkdjVObDZRYjhTZFJsZkNmcDVpZVYxUHdIN0Mya1dGN3pibzloaUMzX2ciLCJpc3MiOiJodHRwczovL2Rldi0xMTA5Nzkub2t0YS5jb20vb2F1dGgyL2F1c243MHJsaXBmSzJtUDV6MzU2IiwiYXVkIjoidGltZXRyYXZlbHMiLCJpYXQiOjE1NTk4MDQyMzcsImV4cCI6MTU1OTgxODYzNywiY2lkIjoiMG9hbm8xM2F1U2ZQOTBVS0ozNTYiLCJ1aWQiOiIwMHVuNnZ3NjdsY2lJS2ZGdzM1NiIsInNjcCI6WyJ2aWV3Il0sInN1YiI6ImxhdGhhcmV2YXRoeXRAZ21haWwuY29tIn0.rw9o95Dwgb0YcjAzH3GjxDIEoIBtnFswqFbit9xSa8VJ5blrlDyl0z1b-sz_JCQIUUpxJt1gikI9yAGCsiaVF2QaUpP2MGsOhMl7ZQL727llzXJf6NmPuwkRzI02IyA4tCzi3UfwjBhzT8Pu-O_3UKflEVv3w1zEEe0V3D88B0NoKbka0F34tQmiAVM5XcLPhyruUY916x5Ca_VYWi_IRyJ57LwOL6G84QoLXI_l73Ef99NIqwM4tGWsUBH21a0wAllwVj3fqcqQMOneZ2HH-hB6-ZPElWvMaEssndXBRYnZfuzSpqGzNPyPVmXXqrrzr6CAcvIcIOFC3t0WLo3LiQ",
+											"type": "string"
+										},
+										{
+											"key": "tokenType",
+											"value": "Bearer",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "http://single4.gateway.webmcloud.com/gateway/Time%20travels/2.0.0/booking",
+									"protocol": "http",
+									"host": [
+										"single4",
+										"gateway",
+										"webmcloud",
+										"com"
+									],
+									"path": [
+										"gateway",
+										"Time%20travels",
+										"2.0.0",
+										"booking"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "booking",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"url": {
+											"raw": "http://single4.gateway.webmcloud.com/gateway/Time%20travels/2.0.0/booking",
+											"protocol": "http",
+											"host": [
+												"single4",
+												"gateway",
+												"webmcloud",
+												"com"
+											],
+											"path": [
+												"gateway",
+												"Time%20travels",
+												"2.0.0",
+												"booking"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 06 Jun 2019 06:57:25 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "APICLOUD-ALB"
+										},
+										{
+											"key": "Content-Length",
+											"value": "139"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"BAK1\": {\n        \"name\": \"Srikar\",\n        \"from\": \"Chennai\",\n        \"to\": \"Delhi\",\n        \"Date\": \"22/10/2018\"\n    },\n    \"BAK2\": {\n        \"name\": \"Vallab\",\n        \"from\": \"Hyderabad\",\n        \"to\": \"Mumbai\",\n        \"Date\": \"12/11/2018\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "http://single4.gateway.webmcloud.com/gateway/Time%20travels/2.0.0/booking/BAK1",
+							"request": {
+								"auth": {
+									"type": "oauth2",
+									"oauth2": [
+										{
+											"key": "accessToken",
+											"value": "eyJraWQiOiJYS1NNTFo5TDN2VHBTbjI4R3F6TFB4QnBPcDA5UE5jTk0wRTYtZTNZY3ZJIiwiYWxnIjoiUlMyNTYifQ.eyJ2ZXIiOjEsImp0aSI6IkFULnhkdjVObDZRYjhTZFJsZkNmcDVpZVYxUHdIN0Mya1dGN3pibzloaUMzX2ciLCJpc3MiOiJodHRwczovL2Rldi0xMTA5Nzkub2t0YS5jb20vb2F1dGgyL2F1c243MHJsaXBmSzJtUDV6MzU2IiwiYXVkIjoidGltZXRyYXZlbHMiLCJpYXQiOjE1NTk4MDQyMzcsImV4cCI6MTU1OTgxODYzNywiY2lkIjoiMG9hbm8xM2F1U2ZQOTBVS0ozNTYiLCJ1aWQiOiIwMHVuNnZ3NjdsY2lJS2ZGdzM1NiIsInNjcCI6WyJ2aWV3Il0sInN1YiI6ImxhdGhhcmV2YXRoeXRAZ21haWwuY29tIn0.rw9o95Dwgb0YcjAzH3GjxDIEoIBtnFswqFbit9xSa8VJ5blrlDyl0z1b-sz_JCQIUUpxJt1gikI9yAGCsiaVF2QaUpP2MGsOhMl7ZQL727llzXJf6NmPuwkRzI02IyA4tCzi3UfwjBhzT8Pu-O_3UKflEVv3w1zEEe0V3D88B0NoKbka0F34tQmiAVM5XcLPhyruUY916x5Ca_VYWi_IRyJ57LwOL6G84QoLXI_l73Ef99NIqwM4tGWsUBH21a0wAllwVj3fqcqQMOneZ2HH-hB6-ZPElWvMaEssndXBRYnZfuzSpqGzNPyPVmXXqrrzr6CAcvIcIOFC3t0WLo3LiQ",
+											"type": "string"
+										},
+										{
+											"key": "tokenType",
+											"value": "Bearer",
+											"type": "string"
+										},
+										{
+											"key": "addTokenTo",
+											"value": "header",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "http://single4.gateway.webmcloud.com/gateway/Time%20travels/2.0.0/booking/BAK1",
+									"protocol": "http",
+									"host": [
+										"single4",
+										"gateway",
+										"webmcloud",
+										"com"
+									],
+									"path": [
+										"gateway",
+										"Time%20travels",
+										"2.0.0",
+										"booking",
+										"BAK1"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "booking/BAK1",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text",
+												"disabled": true
+											}
+										],
+										"url": {
+											"raw": "http://single4.gateway.webmcloud.com/gateway/Time%20travels/2.0.0/booking/BAK1",
+											"protocol": "http",
+											"host": [
+												"single4",
+												"gateway",
+												"webmcloud",
+												"com"
+											],
+											"path": [
+												"gateway",
+												"Time%20travels",
+												"2.0.0",
+												"booking",
+												"BAK1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 06 Jun 2019 07:11:26 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "APICLOUD-ALB"
+										},
+										{
+											"key": "Content-Length",
+											"value": "87"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"name\": \"Srikar\",\n    \"from\": \"Chennai\",\n    \"to\": \"Delhi\",\n    \"Date\": \"22/10/2018\"\n}"
+								}
+							]
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		}
+	]
+}

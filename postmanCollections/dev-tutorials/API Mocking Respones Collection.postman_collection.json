@@ -1,0 +1,1014 @@
+{
+	"info": {
+		"_postman_id": "72b0123b-49e0-4d16-b1f3-a07135bcb763",
+		"name": "API Mocking Respones Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Static mock response",
+			"item": [
+				{
+					"name": "JSON mock response",
+					"item": [
+						{
+							"name": "http://single4.gateway.webmcloud.com/gateway/API_Mocking_Demo/v1/staticMockedResponse",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "manage",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Administrator",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://single4.gateway.webmcloud.com/gateway/API_Mocking_Demo/v1/staticMockedResponse",
+									"protocol": "http",
+									"host": [
+										"single4",
+										"gateway",
+										"webmcloud",
+										"com"
+									],
+									"path": [
+										"gateway",
+										"API_Mocking_Demo",
+										"v1",
+										"staticMockedResponse"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "staticMockedResponse",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text",
+												"disabled": true
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://single4.gateway.webmcloud.com/gateway/API_Mocking_Demo/v1/staticMockedResponse",
+											"protocol": "http",
+											"host": [
+												"single4",
+												"gateway",
+												"webmcloud",
+												"com"
+											],
+											"path": [
+												"gateway",
+												"API_Mocking_Demo",
+												"v1",
+												"staticMockedResponse"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 06 Jun 2019 10:58:35 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "APICLOUD-ALB"
+										},
+										{
+											"key": "Content-Length",
+											"value": "111"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"resource\": \"/generateFromExample\",\n    \"description\": \"Default mocked response from example for status code 200\"\n}"
+								}
+							]
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "XML mock response",
+					"item": [
+						{
+							"name": "http://single4.gateway.webmcloud.com/gateway/API_Mocking_Demo/v1/staticMockedResponse",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "manage",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Administrator",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/xml",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://single4.gateway.webmcloud.com/gateway/API_Mocking_Demo/v1/staticMockedResponse",
+									"protocol": "http",
+									"host": [
+										"single4",
+										"gateway",
+										"webmcloud",
+										"com"
+									],
+									"path": [
+										"gateway",
+										"API_Mocking_Demo",
+										"v1",
+										"staticMockedResponse"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "staticMockedResponse",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text",
+												"disabled": true
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/xml",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://single4.gateway.webmcloud.com/gateway/API_Mocking_Demo/v1/staticMockedResponse",
+											"protocol": "http",
+											"host": [
+												"single4",
+												"gateway",
+												"webmcloud",
+												"com"
+											],
+											"path": [
+												"gateway",
+												"API_Mocking_Demo",
+												"v1",
+												"staticMockedResponse"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "xml",
+									"header": [
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/xml"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 06 Jun 2019 11:14:43 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "APICLOUD-ALB"
+										},
+										{
+											"key": "Content-Length",
+											"value": "127"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "<root>\n    <resource>/generateFromExample</resource>\n    <description>Default mocked response from example for status code 200</description>\n</root>"
+								}
+							]
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Query_Parameter",
+					"item": [
+						{
+							"name": "http://single4.gateway.webmcloud.com/gateway/API_Mocking_Demo/v1/staticMockedResponse?expectedStatusCode=201",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "manage",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Administrator",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://single4.gateway.webmcloud.com/gateway/API_Mocking_Demo/v1/staticMockedResponse?expectedStatusCode=201",
+									"protocol": "http",
+									"host": [
+										"single4",
+										"gateway",
+										"webmcloud",
+										"com"
+									],
+									"path": [
+										"gateway",
+										"API_Mocking_Demo",
+										"v1",
+										"staticMockedResponse"
+									],
+									"query": [
+										{
+											"key": "expectedStatusCode",
+											"value": "201"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "expectedStatusCode=201",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text",
+												"disabled": true
+											},
+											{
+												"key": "Content-Type",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://single4.gateway.webmcloud.com/gateway/API_Mocking_Demo/v1/staticMockedResponse?expectedStatusCode=201",
+											"protocol": "http",
+											"host": [
+												"single4",
+												"gateway",
+												"webmcloud",
+												"com"
+											],
+											"path": [
+												"gateway",
+												"API_Mocking_Demo",
+												"v1",
+												"staticMockedResponse"
+											],
+											"query": [
+												{
+													"key": "expectedStatusCode",
+													"value": "201"
+												}
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 06 Jun 2019 11:24:44 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "APICLOUD-ALB"
+										},
+										{
+											"key": "Content-Length",
+											"value": "55"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"birthday\": 140424540,\n    \"name\": \"PFW\"\n}"
+								}
+							]
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "mock response without configured condition",
+					"item": [
+						{
+							"name": "http://single4.gateway.webmcloud.com/gateway/API_Mocking_Demo/v1/conditionBasedMockedResponse",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "manage",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Administrator",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "text/plain",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://single4.gateway.webmcloud.com/gateway/API_Mocking_Demo/v1/conditionBasedMockedResponse",
+									"protocol": "http",
+									"host": [
+										"single4",
+										"gateway",
+										"webmcloud",
+										"com"
+									],
+									"path": [
+										"gateway",
+										"API_Mocking_Demo",
+										"v1",
+										"conditionBasedMockedResponse"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "conditionBasedMockedResponse",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "text/plain",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://single4.gateway.webmcloud.com/gateway/API_Mocking_Demo/v1/conditionBasedMockedResponse",
+											"protocol": "http",
+											"host": [
+												"single4",
+												"gateway",
+												"webmcloud",
+												"com"
+											],
+											"path": [
+												"gateway",
+												"API_Mocking_Demo",
+												"v1",
+												"conditionBasedMockedResponse"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "plain",
+									"header": [
+										{
+											"key": "Content-Encoding",
+											"value": "gzip"
+										},
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 06 Jun 2019 11:26:35 GMT"
+										},
+										{
+											"key": "Server",
+											"value": "APICLOUD-ALB"
+										},
+										{
+											"key": "Content-Length",
+											"value": "92"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										}
+									],
+									"cookie": [],
+									"body": "No condition evaluates to true. \nSo API-Gateway sent this default response."
+								}
+							]
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "Dynamic Mocking Response",
+			"item": [
+				{
+					"name": "http://single4.gateway.webmcloud.com/gateway/API_Mocking_Demo/v1/dynamicMockedResponse",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "manage",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "Administrator",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"string\":\"sample string\",\n\"integer\":12,\n\"array\":[1,2,3],\n\"boolean\":true,\n\"json\":\n{\n\"key\":\"value\"\n}\n}"
+						},
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/gateway/API_Mocking_Demo/v1/dynamicMockedResponse",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"gateway",
+								"API_Mocking_Demo",
+								"v1",
+								"dynamicMockedResponse"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "dynamicMockedResponse",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"string\":\"sample string\",\n\"integer\":12,\n\"array\":[1,2,3],\n\"boolean\":true,\n\"json\":\n{\n\"key\":\"value\"\n}\n}"
+								},
+								"url": {
+									"raw": "http://single4.gateway.webmcloud.com/gateway/API_Mocking_Demo/v1/dynamicMockedResponse",
+									"protocol": "http",
+									"host": [
+										"single4",
+										"gateway",
+										"webmcloud",
+										"com"
+									],
+									"path": [
+										"gateway",
+										"API_Mocking_Demo",
+										"v1",
+										"dynamicMockedResponse"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 06 Jun 2019 11:29:50 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "APICLOUD-ALB"
+								},
+								{
+									"key": "Content-Length",
+									"value": "104"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"string\": \"sample string\",\n    \"integer\": 12,\n    \"array\": [\n        1,\n        2,\n        3\n    ],\n    \"json\": {\n        \"key\": \"value\"\n    },\n    \"boolean\": true\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Condition based mock response",
+			"item": [
+				{
+					"name": "Header Based Condition",
+					"item": [
+						{
+							"name": "mock response without configured condition",
+							"item": [
+								{
+									"name": "http://single4.gateway.webmcloud.com/gateway/API_Mocking_Demo/v1/conditionBasedMockedResponse",
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "password",
+													"value": "manage",
+													"type": "string"
+												},
+												{
+													"key": "username",
+													"value": "Administrator",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "text/plain",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n\"string\":\"sample string\",\n\"integer\":12,\n\"array\":[1,2,3],\n\"boolean\":true,\n\"json\":\n{\n\"key\":\"value\"\n}\n}"
+										},
+										"url": {
+											"raw": "http://single4.gateway.webmcloud.com/gateway/API_Mocking_Demo/v1/conditionBasedMockedResponse",
+											"protocol": "http",
+											"host": [
+												"single4",
+												"gateway",
+												"webmcloud",
+												"com"
+											],
+											"path": [
+												"gateway",
+												"API_Mocking_Demo",
+												"v1",
+												"conditionBasedMockedResponse"
+											]
+										}
+									},
+									"response": []
+								}
+							],
+							"_postman_isSubFolder": true
+						},
+						{
+							"name": "mock response configured  condition",
+							"item": [
+								{
+									"name": "http://single4.gateway.webmcloud.com/gateway/API_Mocking_Demo/v1/conditionBasedMockedResponse",
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": [
+												{
+													"key": "password",
+													"value": "manage",
+													"type": "string"
+												},
+												{
+													"key": "username",
+													"value": "Administrator",
+													"type": "string"
+												}
+											]
+										},
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "text/plain",
+												"type": "text"
+											},
+											{
+												"key": "requestFrom",
+												"value": "API-Portal",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "Header condition  gets  evaluated to true.\r\nAPI Gateway send this condition mocked response."
+										},
+										"url": {
+											"raw": "http://single4.gateway.webmcloud.com/gateway/API_Mocking_Demo/v1/conditionBasedMockedResponse",
+											"protocol": "http",
+											"host": [
+												"single4",
+												"gateway",
+												"webmcloud",
+												"com"
+											],
+											"path": [
+												"gateway",
+												"API_Mocking_Demo",
+												"v1",
+												"conditionBasedMockedResponse"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "conditionBasedMockedResponse",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "text/plain",
+														"type": "text"
+													},
+													{
+														"key": "requestFrom",
+														"value": "API-Portal",
+														"type": "text"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "Header condition  gets  evaluated to true.\r\nAPI Gateway send this condition mocked response."
+												},
+												"url": {
+													"raw": "http://single4.gateway.webmcloud.com/gateway/API_Mocking_Demo/v1/conditionBasedMockedResponse",
+													"protocol": "http",
+													"host": [
+														"single4",
+														"gateway",
+														"webmcloud",
+														"com"
+													],
+													"path": [
+														"gateway",
+														"API_Mocking_Demo",
+														"v1",
+														"conditionBasedMockedResponse"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "plain",
+											"header": [
+												{
+													"key": "Content-Encoding",
+													"value": "gzip"
+												},
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												},
+												{
+													"key": "Date",
+													"value": "Thu, 06 Jun 2019 11:36:03 GMT"
+												},
+												{
+													"key": "mockedResponse",
+													"value": "true"
+												},
+												{
+													"key": "Server",
+													"value": "APICLOUD-ALB"
+												},
+												{
+													"key": "Content-Length",
+													"value": "95"
+												},
+												{
+													"key": "Connection",
+													"value": "keep-alive"
+												}
+											],
+											"cookie": [],
+											"body": "Header condition  gets  evaluated to true.\nAPI Gateway send this condition mocked response."
+										}
+									]
+								}
+							],
+							"_postman_isSubFolder": true
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Query parameter based condition",
+					"item": [
+						{
+							"name": "http://single4.gateway.webmcloud.com/gateway/API_Mocking_Demo/v1/conditionBasedMockedResponse?queryParam=queryValue",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "manage",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Administrator",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "text/plain",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"string\":\"sample string\",\n\"integer\":12,\n\"array\":[1,2,3],\n\"boolean\":true,\n\"json\":\n{\n\"key\":\"value\"\n}\n}"
+								},
+								"url": {
+									"raw": "http://single4.gateway.webmcloud.com/gateway/API_Mocking_Demo/v1/conditionBasedMockedResponse?queryParam=queryValue",
+									"protocol": "http",
+									"host": [
+										"single4",
+										"gateway",
+										"webmcloud",
+										"com"
+									],
+									"path": [
+										"gateway",
+										"API_Mocking_Demo",
+										"v1",
+										"conditionBasedMockedResponse"
+									],
+									"query": [
+										{
+											"key": "queryParam",
+											"value": "queryValue"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Body Based condition",
+					"item": [
+						{
+							"name": "http://single4.gateway.webmcloud.com/gateway/API_Mocking_Demo/v1/conditionBasedMockedResponse",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "password",
+											"value": "manage",
+											"type": "string"
+										},
+										{
+											"key": "username",
+											"value": "Administrator",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									},
+									{
+										"key": "status",
+										"value": "success",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\"status\":\"success\"\n}"
+								},
+								"url": {
+									"raw": "http://single4.gateway.webmcloud.com/gateway/API_Mocking_Demo/v1/conditionBasedMockedResponse",
+									"protocol": "http",
+									"host": [
+										"single4",
+										"gateway",
+										"webmcloud",
+										"com"
+									],
+									"path": [
+										"gateway",
+										"API_Mocking_Demo",
+										"v1",
+										"conditionBasedMockedResponse"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "4a95b4bb-9ce7-4ab5-98e2-2fc0601343dd",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "08408e0b-bb09-40d5-9e1e-029f8b4ae33b",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
