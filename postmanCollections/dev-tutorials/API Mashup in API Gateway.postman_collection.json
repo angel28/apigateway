@@ -1,0 +1,279 @@
+{
+	"info": {
+		"_postman_id": "f079b07c-d031-4f0f-9abe-77681f736366",
+		"name": "API Mashup in API Gateway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create ,activate,secured API in Single Request ",
+			"item": [
+				{
+					"name": "http://single4.gateway.webmcloud.com/gateway/Demo%20Usecase%201/1.0/create/activate/secured",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Test123$",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "single4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"apiName\": \"Mashups API\",\r\n \"apiDescription\": \"api creation with policy\",\r\n \"url\": \"https://petstore.swagger.io/v2/swagger.json\"\r\n}"
+						},
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/gateway/Demo%20Usecase%201/1.0/create/activate/secured",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"gateway",
+								"Demo%20Usecase%201",
+								"1.0",
+								"create",
+								"activate",
+								"secured"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "41eb0f87-e4d4-4c21-ad58-f1cb9e4fd4a2",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "d1b373ac-3703-4665-a5c0-63f459cf6a0d",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Create,Active API in single request",
+			"item": [
+				{
+					"name": "http://single4.gateway.webmcloud.com/gateway/Demo%20Usecase%202/1.0/accumulate",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Test123$",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "single4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"apiName\": \"Response Accumulation APII\",\r\n \"apiDescription\": \"api creation with policy\",\r\n \"url\": \"https://petstore.swagger.io/v2/swagger.json\"\r\n}"
+						},
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/gateway/Demo%20Usecase%202/1.0/accumulate",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"gateway",
+								"Demo%20Usecase%202",
+								"1.0",
+								"accumulate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Invoking a Postalcode API",
+			"item": [
+				{
+					"name": "\thttp://single4.gateway.webmcloud.com/gateway/PostalCodeAPI/1.0/postalCodes?latitude=333&longitude=444444",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Test123$",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "single4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/gateway/PostalCodeAPI/1.0/postalCodes?latitude=333&longitude=444444",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"gateway",
+								"PostalCodeAPI",
+								"1.0",
+								"postalCodes"
+							],
+							"query": [
+								{
+									"key": "latitude",
+									"value": "333"
+								},
+								{
+									"key": "longitude",
+									"value": "444444"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Invoking Universities API",
+			"item": [
+				{
+					"name": "http://single4.gateway.webmcloud.com/gateway/UniversitiesAPI/1.0/universities?course=medicine&postalCode=600001",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/gateway/UniversitiesAPI/1.0/universities?course=medicine&postalCode=600001",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"gateway",
+								"UniversitiesAPI",
+								"1.0",
+								"universities"
+							],
+							"query": [
+								{
+									"key": "course",
+									"value": "medicine"
+								},
+								{
+									"key": "postalCode",
+									"value": "600001"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Invoking a Postalcode API and Universities API in single request Using Mashup",
+			"item": [
+				{
+					"name": "http://single4.gateway.webmcloud.com/gateway/MashupAPI/1.0/universities?course=medicine&latitude=333&longitude=444444",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/gateway/MashupAPI/1.0/universities?course=medicine&latitude=333&longitude=444444",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"gateway",
+								"MashupAPI",
+								"1.0",
+								"universities"
+							],
+							"query": [
+								{
+									"key": "course",
+									"value": "medicine"
+								},
+								{
+									"key": "latitude",
+									"value": "333"
+								},
+								{
+									"key": "longitude",
+									"value": "444444"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
