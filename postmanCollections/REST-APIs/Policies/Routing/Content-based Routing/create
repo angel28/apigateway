@@ -1,1 +1,127 @@
-
+{
+	"info": {
+		"_postman_id": "4317840e-8a77-4c45-9590-d5f15f2814c7",
+		"name": "create",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://single4.gateway.webmcloud.com/rest/apigateway/policyActions",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Test123$",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "single4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"policyAction\": {\n       \n        \"names\": [\n            {\n                \"value\": \"Content-based Routing\",\n                \"locale\": \"en\"\n            }\n        ],\n        \"templateKey\": \"contentBasedRouting\",\n        \"parameters\": [\n            {\n                \"templateKey\": \"routeTo\",\n                \"parameters\": [\n                    {\n                        \"templateKey\": \"endpointUri\",\n                        \"values\": [\n                            \"http://localhost:5555/rest/employeemanager/${sys:resource_path}\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"method\",\n                        \"values\": [\n                            \"CUSTOM\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"connectTimeout\",\n                        \"values\": [\n                            \"5\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"readTimeout\",\n                        \"values\": [\n                            \"5\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"serviceRegistryParameters\",\n                        \"parameters\": [\n                            {\n                                \"templateKey\": \"discoveryEndpointPathParameter\",\n                                \"parameters\": [\n                                    {\n                                        \"templateKey\": \"parameter\",\n                                        \"values\": [\n                                            \"employee\"\n                                        ]\n                                    },\n                                    {\n                                        \"templateKey\": \"parameterValue\",\n                                        \"values\": [\n                                            \"2\"\n                                        ]\n                                    }\n                                ]\n                            }\n                        ]\n                    }\n                ]\n            }\n        ],\n        \"active\": false\n    }\n}"
+				},
+				"url": {
+					"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/policyActions",
+					"protocol": "http",
+					"host": [
+						"single4",
+						"gateway",
+						"webmcloud",
+						"com"
+					],
+					"path": [
+						"rest",
+						"apigateway",
+						"policyActions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"policyAction\": {\n       \n        \"names\": [\n            {\n                \"value\": \"Content-based Routing\",\n                \"locale\": \"en\"\n            }\n        ],\n        \"templateKey\": \"contentBasedRouting\",\n        \"parameters\": [\n            {\n                \"templateKey\": \"routeTo\",\n                \"parameters\": [\n                    {\n                        \"templateKey\": \"endpointUri\",\n                        \"values\": [\n                            \"http://localhost:5555/rest/employeemanager/${sys:resource_path}\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"method\",\n                        \"values\": [\n                            \"CUSTOM\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"connectTimeout\",\n                        \"values\": [\n                            \"5\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"readTimeout\",\n                        \"values\": [\n                            \"5\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"serviceRegistryParameters\",\n                        \"parameters\": [\n                            {\n                                \"templateKey\": \"discoveryEndpointPathParameter\",\n                                \"parameters\": [\n                                    {\n                                        \"templateKey\": \"parameter\",\n                                        \"values\": [\n                                            \"employee\"\n                                        ]\n                                    },\n                                    {\n                                        \"templateKey\": \"parameterValue\",\n                                        \"values\": [\n                                            \"2\"\n                                        ]\n                                    }\n                                ]\n                            }\n                        ]\n                    }\n                ]\n            }\n        ],\n        \"active\": false\n    }\n}"
+						},
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/policyActions",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"rest",
+								"apigateway",
+								"policyActions"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 02 Jul 2019 08:59:52 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "APICLOUD-ALB"
+						},
+						{
+							"key": "Content-Length",
+							"value": "693"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"policyAction\": {\n        \"id\": \"f3bf21d1-3fd4-4973-b0e5-de7b431b6a50\",\n        \"names\": [\n            {\n                \"value\": \"Content-based Routing\",\n                \"locale\": \"en\"\n            }\n        ],\n        \"templateKey\": \"contentBasedRouting\",\n        \"parameters\": [\n            {\n                \"templateKey\": \"routeTo\",\n                \"parameters\": [\n                    {\n                        \"templateKey\": \"endpointUri\",\n                        \"values\": [\n                            \"http://localhost:5555/rest/employeemanager/${sys:resource_path}\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"method\",\n                        \"values\": [\n                            \"CUSTOM\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"connectTimeout\",\n                        \"values\": [\n                            \"5\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"readTimeout\",\n                        \"values\": [\n                            \"5\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"serviceRegistryParameters\",\n                        \"parameters\": [\n                            {\n                                \"templateKey\": \"discoveryEndpointPathParameter\",\n                                \"parameters\": [\n                                    {\n                                        \"templateKey\": \"parameter\",\n                                        \"values\": [\n                                            \"employee\"\n                                        ]\n                                    },\n                                    {\n                                        \"templateKey\": \"parameterValue\",\n                                        \"values\": [\n                                            \"2\"\n                                        ]\n                                    }\n                                ]\n                            }\n                        ]\n                    }\n                ]\n            }\n        ],\n        \"active\": false\n    }\n}"
+				}
+			]
+		}
+	]
+}
