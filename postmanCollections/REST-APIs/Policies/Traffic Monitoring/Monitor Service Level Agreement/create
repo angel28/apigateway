@@ -1,1 +1,127 @@
-
+{
+	"info": {
+		"_postman_id": "4317840e-8a77-4c45-9590-d5f15f2814c7",
+		"name": "create",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://single4.gateway.webmcloud.com/rest/apigateway/policyActions",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Test123$",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "single4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"policyAction\": {\n       \n        \"names\": [\n            {\n                \"value\": \"Monitor Service Level Agreement\",\n                \"locale\": \"en\"\n            }\n        ],\n        \"templateKey\": \"monitorSLA\",\n        \"parameters\": [\n            {\n                \"templateKey\": \"destination\",\n                \"parameters\": [\n                    {\n                        \"templateKey\": \"destinationType\",\n                        \"values\": [\n                            \"GATEWAY\"\n                        ]\n                    }\n                ]\n            },\n            {\n                \"templateKey\": \"alertInterval\",\n                \"values\": [\n                    \"2\"\n                ]\n            },\n            {\n                \"templateKey\": \"alertIntervalUnit\",\n                \"values\": [\n                    \"minutes\"\n                ]\n            },\n            {\n                \"templateKey\": \"alertFrequency\",\n                \"values\": [\n                    \"once\"\n                ]\n            },\n            {\n                \"templateKey\": \"alertMessage\",\n                \"values\": [\n                    \"Alert\"\n                ]\n            },\n            {\n                \"templateKey\": \"consumerIds\",\n                \"values\": [\n                    \"36bc6fd1-19ae-4e9a-829a-3c5e516d8eaf\"\n                ]\n            },\n            {\n                \"templateKey\": \"monitorRules\",\n                \"parameters\": [\n                    {\n                        \"templateKey\": \"monitorRuleName\",\n                        \"values\": [\n                            \"faultCount\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"monitorRuleOperator\",\n                        \"values\": [\n                            \"EQ\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"value\",\n                        \"values\": [\n                            \"2\"\n                        ]\n                    }\n                ]\n            }\n        ],\n        \"active\": false\n    }\n}"
+				},
+				"url": {
+					"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/policyActions",
+					"protocol": "http",
+					"host": [
+						"single4",
+						"gateway",
+						"webmcloud",
+						"com"
+					],
+					"path": [
+						"rest",
+						"apigateway",
+						"policyActions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"policyAction\": {\n       \n        \"names\": [\n            {\n                \"value\": \"Monitor Service Level Agreement\",\n                \"locale\": \"en\"\n            }\n        ],\n        \"templateKey\": \"monitorSLA\",\n        \"parameters\": [\n            {\n                \"templateKey\": \"destination\",\n                \"parameters\": [\n                    {\n                        \"templateKey\": \"destinationType\",\n                        \"values\": [\n                            \"GATEWAY\"\n                        ]\n                    }\n                ]\n            },\n            {\n                \"templateKey\": \"alertInterval\",\n                \"values\": [\n                    \"2\"\n                ]\n            },\n            {\n                \"templateKey\": \"alertIntervalUnit\",\n                \"values\": [\n                    \"minutes\"\n                ]\n            },\n            {\n                \"templateKey\": \"alertFrequency\",\n                \"values\": [\n                    \"once\"\n                ]\n            },\n            {\n                \"templateKey\": \"alertMessage\",\n                \"values\": [\n                    \"Alert\"\n                ]\n            },\n            {\n                \"templateKey\": \"consumerIds\",\n                \"values\": [\n                    \"36bc6fd1-19ae-4e9a-829a-3c5e516d8eaf\"\n                ]\n            },\n            {\n                \"templateKey\": \"monitorRules\",\n                \"parameters\": [\n                    {\n                        \"templateKey\": \"monitorRuleName\",\n                        \"values\": [\n                            \"faultCount\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"monitorRuleOperator\",\n                        \"values\": [\n                            \"EQ\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"value\",\n                        \"values\": [\n                            \"2\"\n                        ]\n                    }\n                ]\n            }\n        ],\n        \"active\": false\n    }\n}"
+						},
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/policyActions",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"rest",
+								"apigateway",
+								"policyActions"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 02 Jul 2019 04:49:53 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "APICLOUD-ALB"
+						},
+						{
+							"key": "Content-Length",
+							"value": "769"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"policyAction\": {\n        \"id\": \"d0ab486e-f5ef-48b0-93c4-5763871881cd\",\n        \"names\": [\n            {\n                \"value\": \"Monitor Service Level Agreement\",\n                \"locale\": \"en\"\n            }\n        ],\n        \"templateKey\": \"monitorSLA\",\n        \"parameters\": [\n            {\n                \"templateKey\": \"destination\",\n                \"parameters\": [\n                    {\n                        \"templateKey\": \"destinationType\",\n                        \"values\": [\n                            \"GATEWAY\"\n                        ]\n                    }\n                ]\n            },\n            {\n                \"templateKey\": \"alertInterval\",\n                \"values\": [\n                    \"2\"\n                ]\n            },\n            {\n                \"templateKey\": \"alertIntervalUnit\",\n                \"values\": [\n                    \"minutes\"\n                ]\n            },\n            {\n                \"templateKey\": \"alertFrequency\",\n                \"values\": [\n                    \"once\"\n                ]\n            },\n            {\n                \"templateKey\": \"alertMessage\",\n                \"values\": [\n                    \"Alert\"\n                ]\n            },\n            {\n                \"templateKey\": \"consumerIds\",\n                \"values\": [\n                    \"36bc6fd1-19ae-4e9a-829a-3c5e516d8eaf\"\n                ]\n            },\n            {\n                \"templateKey\": \"monitorRules\",\n                \"parameters\": [\n                    {\n                        \"templateKey\": \"monitorRuleName\",\n                        \"values\": [\n                            \"faultCount\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"monitorRuleOperator\",\n                        \"values\": [\n                            \"EQ\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"value\",\n                        \"values\": [\n                            \"2\"\n                        ]\n                    }\n                ]\n            }\n        ],\n        \"active\": false\n    }\n}"
+				}
+			]
+		}
+	]
+}
