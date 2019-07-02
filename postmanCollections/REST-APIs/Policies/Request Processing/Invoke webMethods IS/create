@@ -1,1 +1,129 @@
-
+{
+	"info": {
+		"_postman_id": "677387d5-318a-4195-b424-eb6e558a8c87",
+		"name": "create",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://single4.gateway.webmcloud.com/rest/apigateway/policyActions/dd451866-8a08-40f0-ba12-73e07a5c0b6e",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Test123$",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "single4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"policyAction\": {\n      \n        \"names\": [\n            {\n                \"value\": \"Invoke webMethods IS\",\n                \"locale\": \"en\"\n            }\n        ],\n        \"templateKey\": \"requestInvokeESB\",\n        \"parameters\": [\n            {\n                \"templateKey\": \"esbAlias\",\n                \"values\": [\n                    \"webMethodsIsServiceAlias1\"\n                ]\n            }\n        ],\n        \"active\": false\n    }\n}"
+				},
+				"url": {
+					"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/policyActions/dd451866-8a08-40f0-ba12-73e07a5c0b6e",
+					"protocol": "http",
+					"host": [
+						"single4",
+						"gateway",
+						"webmcloud",
+						"com"
+					],
+					"path": [
+						"rest",
+						"apigateway",
+						"policyActions",
+						"dd451866-8a08-40f0-ba12-73e07a5c0b6e"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"policyAction\": {\n      \n        \"names\": [\n            {\n                \"value\": \"Invoke webMethods IS\",\n                \"locale\": \"en\"\n            }\n        ],\n        \"templateKey\": \"requestInvokeESB\",\n        \"parameters\": [\n            {\n                \"templateKey\": \"esbAlias\",\n                \"values\": [\n                    \"webMethodsIsServiceAlias1\"\n                ]\n            }\n        ],\n        \"active\": false\n    }\n}"
+						},
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/policyActions/dd451866-8a08-40f0-ba12-73e07a5c0b6e",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"rest",
+								"apigateway",
+								"policyActions",
+								"dd451866-8a08-40f0-ba12-73e07a5c0b6e"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 02 Jul 2019 10:46:55 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "APICLOUD-ALB"
+						},
+						{
+							"key": "Content-Length",
+							"value": "248"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"policyAction\": {\n        \"id\": \"9aa4932d-73ab-4c88-9e8e-1b7b3d033262\",\n        \"names\": [\n            {\n                \"value\": \"Invoke webMethods IS\",\n                \"locale\": \"en\"\n            }\n        ],\n        \"templateKey\": \"requestInvokeESB\",\n        \"parameters\": [\n            {\n                \"templateKey\": \"esbAlias\",\n                \"values\": [\n                    \"webMethodsIsServiceAlias1\"\n                ]\n            }\n        ],\n        \"active\": false\n    }\n}"
+				}
+			]
+		}
+	]
+}
