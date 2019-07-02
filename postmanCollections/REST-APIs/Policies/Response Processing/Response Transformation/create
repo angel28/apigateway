@@ -1,1 +1,117 @@
-
+{
+	"info": {
+		"_postman_id": "4317840e-8a77-4c45-9590-d5f15f2814c7",
+		"name": "create",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "\thttp://single4.gateway.webmcloud.com/rest/apigateway/policyActions",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Test123$",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "single4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"policyAction\": {\n       \n        \"names\": [\n            {\n                \"value\": \"Response Transformation\",\n                \"locale\": \"en\"\n            }\n        ],\n        \"templateKey\": \"responseTransformation\",\n        \"parameters\": [\n            {\n                \"templateKey\": \"transformationConditions\",\n                \"parameters\": [\n                    {\n                        \"templateKey\": \"logicalConnector\",\n                        \"values\": [\n                            \"OR\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"transformationCondition\",\n                        \"parameters\": [\n                            {\n                                \"templateKey\": \"transformationVariable\",\n                                \"values\": [\n                                    \"${response.payload.jsonPath[$.empName}\"\n                                ]\n                            },\n                            {\n                                \"templateKey\": \"transformationConditionOperator\",\n                                \"values\": [\n                                    \"exists\"\n                                ]\n                            },\n                            {\n                                \"templateKey\": \"transformationConditionValue\",\n                                \"values\": [\n                                    \"student\"\n                                ]\n                            }\n                        ]\n                    }\n                ]\n            },\n            {\n                \"templateKey\": \"responseTransformationConfiguration\",\n                \"parameters\": [\n                    {\n                        \"templateKey\": \"statusTransformation\",\n                        \"parameters\": [\n                            {\n                                \"templateKey\": \"statusCodeOptional\",\n                                \"values\": [\n                                    \"201\"\n                                ]\n                            },\n                            {\n                                \"templateKey\": \"statusMessage\",\n                                \"values\": [\n                                    \"Created\"\n                                ]\n                            }\n                        ]\n                    }\n                ]\n            }\n        ],\n        \"active\": false\n    }\n}"
+				},
+				"url": {
+					"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/policyActions",
+					"protocol": "http",
+					"host": [
+						"single4",
+						"gateway",
+						"webmcloud",
+						"com"
+					],
+					"path": [
+						"rest",
+						"apigateway",
+						"policyActions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"policyAction\": {\n       \n        \"names\": [\n            {\n                \"value\": \"Response Transformation\",\n                \"locale\": \"en\"\n            }\n        ],\n        \"templateKey\": \"responseTransformation\",\n        \"parameters\": [\n            {\n                \"templateKey\": \"transformationConditions\",\n                \"parameters\": [\n                    {\n                        \"templateKey\": \"logicalConnector\",\n                        \"values\": [\n                            \"OR\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"transformationCondition\",\n                        \"parameters\": [\n                            {\n                                \"templateKey\": \"transformationVariable\",\n                                \"values\": [\n                                    \"${response.payload.jsonPath[$.empName}\"\n                                ]\n                            },\n                            {\n                                \"templateKey\": \"transformationConditionOperator\",\n                                \"values\": [\n                                    \"exists\"\n                                ]\n                            },\n                            {\n                                \"templateKey\": \"transformationConditionValue\",\n                                \"values\": [\n                                    \"student\"\n                                ]\n                            }\n                        ]\n                    }\n                ]\n            },\n            {\n                \"templateKey\": \"responseTransformationConfiguration\",\n                \"parameters\": [\n                    {\n                        \"templateKey\": \"statusTransformation\",\n                        \"parameters\": [\n                            {\n                                \"templateKey\": \"statusCodeOptional\",\n                                \"values\": [\n                                    \"201\"\n                                ]\n                            },\n                            {\n                                \"templateKey\": \"statusMessage\",\n                                \"values\": [\n                                    \"Created\"\n                                ]\n                            }\n                        ]\n                    }\n                ]\n            }\n        ],\n        \"active\": false\n    }\n}"
+						},
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/policyActions",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"rest",
+								"apigateway",
+								"policyActions"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 13 Jun 2019 05:39:25 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "APICLOUD-ALB"
+						},
+						{
+							"key": "Content-Length",
+							"value": "818"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"policyAction\": {\n        \"id\": \"6d17188c-9828-4f18-a758-06e25dc619e8\",\n        \"names\": [\n            {\n                \"value\": \"Response Transformation\",\n                \"locale\": \"en\"\n            }\n        ],\n        \"templateKey\": \"responseTransformation\",\n        \"parameters\": [\n            {\n                \"templateKey\": \"transformationConditions\",\n                \"parameters\": [\n                    {\n                        \"templateKey\": \"logicalConnector\",\n                        \"values\": [\n                            \"OR\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"transformationCondition\",\n                        \"parameters\": [\n                            {\n                                \"templateKey\": \"transformationVariable\",\n                                \"values\": [\n                                    \"${response.payload.jsonPath[$.empName}\"\n                                ]\n                            },\n                            {\n                                \"templateKey\": \"transformationConditionOperator\",\n                                \"values\": [\n                                    \"exists\"\n                                ]\n                            },\n                            {\n                                \"templateKey\": \"transformationConditionValue\",\n                                \"values\": [\n                                    \"student\"\n                                ]\n                            }\n                        ]\n                    }\n                ]\n            },\n            {\n                \"templateKey\": \"responseTransformationConfiguration\",\n                \"parameters\": [\n                    {\n                        \"templateKey\": \"statusTransformation\",\n                        \"parameters\": [\n                            {\n                                \"templateKey\": \"statusCodeOptional\",\n                                \"values\": [\n                                    \"201\"\n                                ]\n                            },\n                            {\n                                \"templateKey\": \"statusMessage\",\n                                \"values\": [\n                                    \"Created\"\n                                ]\n                            }\n                        ]\n                    }\n                ]\n            }\n        ],\n        \"active\": false\n    }\n}"
+				}
+			]
+		}
+	]
+}
