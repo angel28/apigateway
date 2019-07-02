@@ -1,1 +1,117 @@
-
+{
+	"info": {
+		"_postman_id": "5f849d11-1240-4208-ac4b-5d879b490385",
+		"name": "create",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "\thttp://single4.gateway.webmcloud.com/rest/apigateway/policyActions",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Test123$",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "single4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"policyAction\": {\n        \n        \"names\": [\n            {\n                \"value\": \"Request Transformation\",\n                \"locale\": \"en\"\n            }\n        ],\n        \"templateKey\": \"requestTransformation\",\n        \"parameters\": [\n            {\n                \"templateKey\": \"transformationConditions\",\n                \"parameters\": [\n                    {\n                        \"templateKey\": \"logicalConnector\",\n                        \"values\": [\n                            \"OR\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"transformationCondition\",\n                        \"parameters\": [\n                            {\n                                \"templateKey\": \"transformationVariable\",\n                                \"values\": [\n                                    \"${request.httpMethod}\"\n                                ]\n                            },\n                            {\n                                \"templateKey\": \"transformationConditionOperator\",\n                                \"values\": [\n                                    \"equals\"\n                                ]\n                            },\n                            {\n                                \"templateKey\": \"transformationConditionValue\",\n                                \"values\": [\n                                    \"GET\"\n                                ]\n                            }\n                        ]\n                    }\n                ]\n            },\n            {\n                \"templateKey\": \"requestTransformationConfiguration\",\n                \"parameters\": [\n                    {\n                        \"templateKey\": \"commonTransformation\",\n                        \"parameters\": [\n                            {\n                                \"templateKey\": \"addOrModify\",\n                                \"parameters\": [\n                                    {\n                                        \"templateKey\": \"transformationVariable\",\n                                        \"values\": [\n                                            \"${request.path}\"\n                                        ]\n                                    },\n                                    {\n                                        \"templateKey\": \"transformationValue\",\n                                        \"values\": [\n                                            \"/employee\"\n                                        ]\n                                    }\n                                ]\n                            }\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"methodTransformation\",\n                        \"parameters\": [\n                            {\n                                \"templateKey\": \"method\",\n                                \"values\": [\n                                    \"GET\"\n                                ]\n                            }\n                        ]\n                    }\n                ]\n            }\n        ],\n        \"active\": false\n    }\n}"
+				},
+				"url": {
+					"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/policyActions",
+					"protocol": "http",
+					"host": [
+						"single4",
+						"gateway",
+						"webmcloud",
+						"com"
+					],
+					"path": [
+						"rest",
+						"apigateway",
+						"policyActions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "policyActions",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"policyAction\": {\n        \n        \"names\": [\n            {\n                \"value\": \"Request Transformation\",\n                \"locale\": \"en\"\n            }\n        ],\n        \"templateKey\": \"requestTransformation\",\n        \"parameters\": [\n            {\n                \"templateKey\": \"transformationConditions\",\n                \"parameters\": [\n                    {\n                        \"templateKey\": \"logicalConnector\",\n                        \"values\": [\n                            \"OR\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"transformationCondition\",\n                        \"parameters\": [\n                            {\n                                \"templateKey\": \"transformationVariable\",\n                                \"values\": [\n                                    \"${request.httpMethod}\"\n                                ]\n                            },\n                            {\n                                \"templateKey\": \"transformationConditionOperator\",\n                                \"values\": [\n                                    \"equals\"\n                                ]\n                            },\n                            {\n                                \"templateKey\": \"transformationConditionValue\",\n                                \"values\": [\n                                    \"GET\"\n                                ]\n                            }\n                        ]\n                    }\n                ]\n            },\n            {\n                \"templateKey\": \"requestTransformationConfiguration\",\n                \"parameters\": [\n                    {\n                        \"templateKey\": \"commonTransformation\",\n                        \"parameters\": [\n                            {\n                                \"templateKey\": \"addOrModify\",\n                                \"parameters\": [\n                                    {\n                                        \"templateKey\": \"transformationVariable\",\n                                        \"values\": [\n                                            \"${request.path}\"\n                                        ]\n                                    },\n                                    {\n                                        \"templateKey\": \"transformationValue\",\n                                        \"values\": [\n                                            \"/employee\"\n                                        ]\n                                    }\n                                ]\n                            }\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"methodTransformation\",\n                        \"parameters\": [\n                            {\n                                \"templateKey\": \"method\",\n                                \"values\": [\n                                    \"GET\"\n                                ]\n                            }\n                        ]\n                    }\n                ]\n            }\n        ],\n        \"active\": false\n    }\n}"
+						},
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/policyActions",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"rest",
+								"apigateway",
+								"policyActions"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 13 Jun 2019 05:22:57 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "APICLOUD-ALB"
+						},
+						{
+							"key": "Content-Length",
+							"value": "959"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"policyAction\": {\n        \"id\": \"36b09e16-6452-4c9c-9fad-04ebdb59e05d\",\n        \"names\": [\n            {\n                \"value\": \"Request Transformation\",\n                \"locale\": \"en\"\n            }\n        ],\n        \"templateKey\": \"requestTransformation\",\n        \"parameters\": [\n            {\n                \"templateKey\": \"transformationConditions\",\n                \"parameters\": [\n                    {\n                        \"templateKey\": \"logicalConnector\",\n                        \"values\": [\n                            \"OR\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"transformationCondition\",\n                        \"parameters\": [\n                            {\n                                \"templateKey\": \"transformationVariable\",\n                                \"values\": [\n                                    \"${request.httpMethod}\"\n                                ]\n                            },\n                            {\n                                \"templateKey\": \"transformationConditionOperator\",\n                                \"values\": [\n                                    \"equals\"\n                                ]\n                            },\n                            {\n                                \"templateKey\": \"transformationConditionValue\",\n                                \"values\": [\n                                    \"GET\"\n                                ]\n                            }\n                        ]\n                    }\n                ]\n            },\n            {\n                \"templateKey\": \"requestTransformationConfiguration\",\n                \"parameters\": [\n                    {\n                        \"templateKey\": \"commonTransformation\",\n                        \"parameters\": [\n                            {\n                                \"templateKey\": \"addOrModify\",\n                                \"parameters\": [\n                                    {\n                                        \"templateKey\": \"transformationVariable\",\n                                        \"values\": [\n                                            \"${request.path}\"\n                                        ]\n                                    },\n                                    {\n                                        \"templateKey\": \"transformationValue\",\n                                        \"values\": [\n                                            \"/employee\"\n                                        ]\n                                    }\n                                ]\n                            }\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"methodTransformation\",\n                        \"parameters\": [\n                            {\n                                \"templateKey\": \"method\",\n                                \"values\": [\n                                    \"GET\"\n                                ]\n                            }\n                        ]\n                    }\n                ]\n            }\n        ],\n        \"active\": false\n    }\n}"
+				}
+			]
+		}
+	]
+}
