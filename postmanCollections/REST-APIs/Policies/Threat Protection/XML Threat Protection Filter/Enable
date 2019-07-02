@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "5e60b549-1d6e-4973-913c-c06212d342cf",
+		"name": "Enable",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "\thttp://single4.gateway.webmcloud.com/rest/apigateway/policies/ca06027a-fbeb-4ca6-ac8a-5b919bb37aa8",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Test123$",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "single4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"policy\": {\n        \"id\": \"ca06027a-fbeb-4ca6-ac8a-5b919bb37aa8\",\n        \"names\": [\n            {\n                \"value\": \"XmlThreatProtectionFilter\",\n                \"locale\": \"English\"\n            }\n        ],\n        \"parameters\": [\n            {\n                \"templateKey\": \"customErrorMessage\",\n                \"values\": [\n                    \"\"\n                ]\n            },\n            {\n                \"templateKey\": \"action\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"requestType\",\n                \"values\": [\n                    \"ALL\"\n                ]\n            },\n            {\n                \"templateKey\": \"enableRule\",\n                \"values\": [\n                    \"Disable\"\n                ]\n            },\n            {\n                \"templateKey\": \"rule\",\n                \"values\": [\n                    \"XmlThreatProtectionFilter\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleDescription\",\n                \"values\": [\n                    \"\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleName\",\n                \"values\": [\n                    \"XmlThreatProtectionFilter\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleType\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"index\",\n                \"values\": [\n                    \"0\"\n                ]\n            },\n            {\n                \"templateKey\": \"isEnterpriseGatewayLicensed\",\n                \"values\": [\n                    \"true\"\n                ]\n            },\n            {\n                \"templateKey\": \"storedRuleType\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"isRuleEnabled\",\n                \"values\": [\n                    \"true\"\n                ]\n            }\n        ],\n        \"policyEnforcements\": [\n            {\n                \"enforcements\": [\n                    {\n                        \"enforcementObjectId\": \"cf08f051-8915-4996-8e3a-09132a85e0d5\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"5e1d2de8-9d43-4590-a73e-0e086fb8e066\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"abb99224-b43f-41d1-a0a9-32dc91cd33db\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"d817f67c-49ea-4318-9704-bfa6461dafb1\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"00a359c3-0689-4fdb-bc85-dee7914e0489\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"9cdf0076-ddcd-4f4c-8906-9e4224289569\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"12d87c70-d65a-4d9a-bc15-f7f36f0551b7\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"29c54dd2-cd9c-4c4b-a291-7bcf4555f109\",\n                        \"order\": null\n                    }\n                ],\n                \"stageKey\": \"threatProtection\"\n            }\n        ],\n        \"active\": false,\n        \"global\": true,\n        \"systemPolicy\": false,\n        \"policyActionTemplateKeys\": [\n            \"xmlThreatProtectionFilter\"\n        ]\n    }\n}"
+				},
+				"url": {
+					"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/policies/ca06027a-fbeb-4ca6-ac8a-5b919bb37aa8",
+					"protocol": "http",
+					"host": [
+						"single4",
+						"gateway",
+						"webmcloud",
+						"com"
+					],
+					"path": [
+						"rest",
+						"apigateway",
+						"policies",
+						"ca06027a-fbeb-4ca6-ac8a-5b919bb37aa8"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Enabled",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"policy\": {\n        \"id\": \"ca06027a-fbeb-4ca6-ac8a-5b919bb37aa8\",\n        \"names\": [\n            {\n                \"value\": \"XmlThreatProtectionFilter\",\n                \"locale\": \"English\"\n            }\n        ],\n        \"parameters\": [\n            {\n                \"templateKey\": \"customErrorMessage\",\n                \"values\": [\n                    \"\"\n                ]\n            },\n            {\n                \"templateKey\": \"action\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"requestType\",\n                \"values\": [\n                    \"ALL\"\n                ]\n            },\n            {\n                \"templateKey\": \"enableRule\",\n                \"values\": [\n                    \"Disable\"\n                ]\n            },\n            {\n                \"templateKey\": \"rule\",\n                \"values\": [\n                    \"XmlThreatProtectionFilter\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleDescription\",\n                \"values\": [\n                    \"\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleName\",\n                \"values\": [\n                    \"XmlThreatProtectionFilter\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleType\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"index\",\n                \"values\": [\n                    \"0\"\n                ]\n            },\n            {\n                \"templateKey\": \"isEnterpriseGatewayLicensed\",\n                \"values\": [\n                    \"true\"\n                ]\n            },\n            {\n                \"templateKey\": \"storedRuleType\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"isRuleEnabled\",\n                \"values\": [\n                    \"true\"\n                ]\n            }\n        ],\n        \"policyEnforcements\": [\n            {\n                \"enforcements\": [\n                    {\n                        \"enforcementObjectId\": \"cf08f051-8915-4996-8e3a-09132a85e0d5\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"5e1d2de8-9d43-4590-a73e-0e086fb8e066\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"abb99224-b43f-41d1-a0a9-32dc91cd33db\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"d817f67c-49ea-4318-9704-bfa6461dafb1\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"00a359c3-0689-4fdb-bc85-dee7914e0489\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"9cdf0076-ddcd-4f4c-8906-9e4224289569\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"12d87c70-d65a-4d9a-bc15-f7f36f0551b7\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"29c54dd2-cd9c-4c4b-a291-7bcf4555f109\",\n                        \"order\": null\n                    }\n                ],\n                \"stageKey\": \"threatProtection\"\n            }\n        ],\n        \"active\": false,\n        \"global\": true,\n        \"systemPolicy\": false,\n        \"policyActionTemplateKeys\": [\n            \"xmlThreatProtectionFilter\"\n        ]\n    }\n}"
+						},
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/policies/ca06027a-fbeb-4ca6-ac8a-5b919bb37aa8",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"rest",
+								"apigateway",
+								"policies",
+								"ca06027a-fbeb-4ca6-ac8a-5b919bb37aa8"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 Jun 2019 06:46:03 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "APICLOUD-ALB"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1591"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"policy\": {\n        \"id\": \"ca06027a-fbeb-4ca6-ac8a-5b919bb37aa8\",\n        \"names\": [\n            {\n                \"value\": \"XmlThreatProtectionFilter\",\n                \"locale\": \"English\"\n            }\n        ],\n        \"parameters\": [\n            {\n                \"templateKey\": \"customErrorMessage\",\n                \"values\": [\n                    \"\"\n                ]\n            },\n            {\n                \"templateKey\": \"action\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"requestType\",\n                \"values\": [\n                    \"ALL\"\n                ]\n            },\n            {\n                \"templateKey\": \"enableRule\",\n                \"values\": [\n                    \"Disable\"\n                ]\n            },\n            {\n                \"templateKey\": \"rule\",\n                \"values\": [\n                    \"XmlThreatProtectionFilter\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleDescription\",\n                \"values\": [\n                    \"\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleName\",\n                \"values\": [\n                    \"XmlThreatProtectionFilter\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleType\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"index\",\n                \"values\": [\n                    \"0\"\n                ]\n            },\n            {\n                \"templateKey\": \"isEnterpriseGatewayLicensed\",\n                \"values\": [\n                    \"true\"\n                ]\n            },\n            {\n                \"templateKey\": \"storedRuleType\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"isRuleEnabled\",\n                \"values\": [\n                    \"true\"\n                ]\n            },\n            {\n                \"templateKey\": \"storedRuleType\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            }\n        ],\n        \"policyEnforcements\": [\n            {\n                \"enforcements\": [\n                    {\n                        \"enforcementObjectId\": \"cf08f051-8915-4996-8e3a-09132a85e0d5\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"5e1d2de8-9d43-4590-a73e-0e086fb8e066\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"abb99224-b43f-41d1-a0a9-32dc91cd33db\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"d817f67c-49ea-4318-9704-bfa6461dafb1\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"00a359c3-0689-4fdb-bc85-dee7914e0489\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"9cdf0076-ddcd-4f4c-8906-9e4224289569\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"12d87c70-d65a-4d9a-bc15-f7f36f0551b7\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"29c54dd2-cd9c-4c4b-a291-7bcf4555f109\",\n                        \"order\": null\n                    }\n                ],\n                \"stageKey\": \"threatProtection\"\n            }\n        ],\n        \"active\": true,\n        \"global\": true,\n        \"systemPolicy\": false,\n        \"policyActionTemplateKeys\": [\n            \"xmlThreatProtectionFilter\"\n        ]\n    }\n}"
+				}
+			]
+		}
+	]
+}
