@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "cc2c0ecf-b144-42c5-adad-55372c03bb40",
+		"name": "delete",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://single4.gateway.webmcloud.com/rest/apigateway/policies/f388886f-151b-444b-a5ab-e236f9f19101",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Test123$",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "single4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"policy\": {\n        \"id\": \"f388886f-151b-444b-a5ab-e236f9f19101\",\n        \"names\": [\n            {\n                \"value\": \"Default Policy for API StudentRecord\",\n                \"locale\": \"English\"\n            }\n        ],\n        \"descriptions\": [\n            {\n                \"value\": \"\",\n                \"locale\": \"English\"\n            }\n        ],\n        \"scope\": {\n            \"scopeConditions\": []\n        },\n        \"policyEnforcements\": [\n            {\n                \"enforcements\": [\n                    {\n                        \"enforcementObjectId\": \"a5414179-ae33-4c4c-a4f3-2981fb9aaf7f\",\n                        \"order\": null\n                    }\n                ],\n                \"stageKey\": \"transport\"\n            }\n        ],\n        \"policyScope\": \"SERVICE\",\n        \"active\": false,\n        \"global\": false,\n        \"systemPolicy\": false\n    }\n}"
+				},
+				"url": {
+					"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/policies/f388886f-151b-444b-a5ab-e236f9f19101",
+					"protocol": "http",
+					"host": [
+						"single4",
+						"gateway",
+						"webmcloud",
+						"com"
+					],
+					"path": [
+						"rest",
+						"apigateway",
+						"policies",
+						"f388886f-151b-444b-a5ab-e236f9f19101"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"policy\": {\n        \"id\": \"f388886f-151b-444b-a5ab-e236f9f19101\",\n        \"names\": [\n            {\n                \"value\": \"Default Policy for API StudentRecord\",\n                \"locale\": \"English\"\n            }\n        ],\n        \"descriptions\": [\n            {\n                \"value\": \"\",\n                \"locale\": \"English\"\n            }\n        ],\n        \"scope\": {\n            \"scopeConditions\": []\n        },\n        \"policyEnforcements\": [\n            {\n                \"enforcements\": [\n                    {\n                        \"enforcementObjectId\": \"a5414179-ae33-4c4c-a4f3-2981fb9aaf7f\",\n                        \"order\": null\n                    }\n                ],\n                \"stageKey\": \"transport\"\n            }\n        ],\n        \"policyScope\": \"SERVICE\",\n        \"active\": false,\n        \"global\": false,\n        \"systemPolicy\": false\n    }\n}"
+						},
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/policies/f388886f-151b-444b-a5ab-e236f9f19101",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"rest",
+								"apigateway",
+								"policies",
+								"f388886f-151b-444b-a5ab-e236f9f19101"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 01 Jul 2019 11:43:54 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "APICLOUD-ALB"
+						},
+						{
+							"key": "Content-Length",
+							"value": "430"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"policy\": {\n        \"id\": \"f388886f-151b-444b-a5ab-e236f9f19101\",\n        \"names\": [\n            {\n                \"value\": \"Default Policy for API StudentRecord\",\n                \"locale\": \"English\"\n            }\n        ],\n        \"descriptions\": [\n            {\n                \"value\": \"\",\n                \"locale\": \"English\"\n            }\n        ],\n        \"scope\": {\n            \"scopeConditions\": []\n        },\n        \"policyEnforcements\": [\n            {\n                \"enforcements\": [\n                    {\n                        \"enforcementObjectId\": \"a5414179-ae33-4c4c-a4f3-2981fb9aaf7f\",\n                        \"order\": null\n                    }\n                ],\n                \"stageKey\": \"transport\"\n            }\n        ],\n        \"policyScope\": \"SERVICE\",\n        \"active\": false,\n        \"global\": false,\n        \"systemPolicy\": false\n    }\n}"
+				}
+			]
+		}
+	]
+}
