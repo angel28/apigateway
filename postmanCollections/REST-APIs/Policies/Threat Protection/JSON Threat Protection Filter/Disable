@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "66e5d591-878e-4dcc-98fb-fea0748279b9",
+		"name": "Disable",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "\thttp://single4.gateway.webmcloud.com/rest/apigateway/policies/10dfbd9f-9932-42f2-876d-eb2980e451b6",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Test123$",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "single4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"policy\": {\n        \"id\": \"10dfbd9f-9932-42f2-876d-eb2980e451b6\",\n        \"names\": [\n            {\n                \"value\": \"JsonThreatProtection_1\",\n                \"locale\": \"English\"\n            }\n        ],\n        \"parameters\": [\n            {\n                \"templateKey\": \"customErrorMessage\",\n                \"values\": [\n                    \"Limit Exceeded\"\n                ]\n            },\n            {\n                \"templateKey\": \"action\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"requestType\",\n                \"values\": [\n                    \"ALL\"\n                ]\n            },\n            {\n                \"templateKey\": \"enableRule\",\n                \"values\": [\n                    \"Disable\"\n                ]\n            },\n            {\n                \"templateKey\": \"rule\",\n                \"values\": [\n                    \"JsonThreatProtection_1\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleDescription\",\n                \"values\": [\n                    \"\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleName\",\n                \"values\": [\n                    \"JsonThreatProtection_1\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleType\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"isEnterpriseGatewayLicensed\",\n                \"values\": [\n                    \"true\"\n                ]\n            },\n            {\n                \"templateKey\": \"isRuleEnabled\",\n                \"values\": [\n                    \"false\"\n                ]\n            },\n            {\n                \"templateKey\": \"storedRuleType\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            }\n        ],\n        \"policyEnforcements\": [\n            {\n                \"enforcements\": [\n                    {\n                        \"enforcementObjectId\": \"f029dbdc-d5bd-4ca9-a06b-f7dc071191dc\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"5c814829-ce00-4df9-90b2-f249ce2c2576\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"5cd2ee19-048a-4e59-b859-b2a5f2e67b2f\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"07097db5-766d-4fca-b1de-6a47bd1a1298\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"db9bb277-9bdd-4e09-9296-1a2ee7c123b2\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"bad749b0-9993-4945-b70d-44092802ecd7\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"46072b53-d6b6-41aa-85d4-08b66ca3788a\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"299b6db2-0545-4015-aa3e-8cdd54084b7c\",\n                        \"order\": null\n                    }\n                ],\n                \"stageKey\": \"threatProtection\"\n            }\n        ],\n        \"active\": true,\n        \"global\": true,\n        \"systemPolicy\": false,\n        \"policyActionTemplateKeys\": [\n            \"jsonThreatProtectionFilter\"\n        ]\n    }\n}"
+				},
+				"url": {
+					"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/policies/10dfbd9f-9932-42f2-876d-eb2980e451b6",
+					"protocol": "http",
+					"host": [
+						"single4",
+						"gateway",
+						"webmcloud",
+						"com"
+					],
+					"path": [
+						"rest",
+						"apigateway",
+						"policies",
+						"10dfbd9f-9932-42f2-876d-eb2980e451b6"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Disabled",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"policy\": {\n        \"id\": \"10dfbd9f-9932-42f2-876d-eb2980e451b6\",\n        \"names\": [\n            {\n                \"value\": \"JsonThreatProtection_1\",\n                \"locale\": \"English\"\n            }\n        ],\n        \"parameters\": [\n            {\n                \"templateKey\": \"customErrorMessage\",\n                \"values\": [\n                    \"Limit Exceeded\"\n                ]\n            },\n            {\n                \"templateKey\": \"action\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"requestType\",\n                \"values\": [\n                    \"ALL\"\n                ]\n            },\n            {\n                \"templateKey\": \"enableRule\",\n                \"values\": [\n                    \"Disable\"\n                ]\n            },\n            {\n                \"templateKey\": \"rule\",\n                \"values\": [\n                    \"JsonThreatProtection_1\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleDescription\",\n                \"values\": [\n                    \"\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleName\",\n                \"values\": [\n                    \"JsonThreatProtection_1\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleType\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"isEnterpriseGatewayLicensed\",\n                \"values\": [\n                    \"true\"\n                ]\n            },\n            {\n                \"templateKey\": \"isRuleEnabled\",\n                \"values\": [\n                    \"false\"\n                ]\n            },\n            {\n                \"templateKey\": \"storedRuleType\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            }\n        ],\n        \"policyEnforcements\": [\n            {\n                \"enforcements\": [\n                    {\n                        \"enforcementObjectId\": \"f029dbdc-d5bd-4ca9-a06b-f7dc071191dc\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"5c814829-ce00-4df9-90b2-f249ce2c2576\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"5cd2ee19-048a-4e59-b859-b2a5f2e67b2f\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"07097db5-766d-4fca-b1de-6a47bd1a1298\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"db9bb277-9bdd-4e09-9296-1a2ee7c123b2\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"bad749b0-9993-4945-b70d-44092802ecd7\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"46072b53-d6b6-41aa-85d4-08b66ca3788a\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"299b6db2-0545-4015-aa3e-8cdd54084b7c\",\n                        \"order\": null\n                    }\n                ],\n                \"stageKey\": \"threatProtection\"\n            }\n        ],\n        \"active\": true,\n        \"global\": true,\n        \"systemPolicy\": false,\n        \"policyActionTemplateKeys\": [\n            \"jsonThreatProtectionFilter\"\n        ]\n    }\n}"
+						},
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/policies/10dfbd9f-9932-42f2-876d-eb2980e451b6",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"rest",
+								"apigateway",
+								"policies",
+								"10dfbd9f-9932-42f2-876d-eb2980e451b6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 Jun 2019 07:10:36 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "APICLOUD-ALB"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1560"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"policy\": {\n        \"id\": \"10dfbd9f-9932-42f2-876d-eb2980e451b6\",\n        \"names\": [\n            {\n                \"value\": \"JsonThreatProtection_1\",\n                \"locale\": \"English\"\n            }\n        ],\n        \"parameters\": [\n            {\n                \"templateKey\": \"customErrorMessage\",\n                \"values\": [\n                    \"Limit Exceeded\"\n                ]\n            },\n            {\n                \"templateKey\": \"action\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"requestType\",\n                \"values\": [\n                    \"ALL\"\n                ]\n            },\n            {\n                \"templateKey\": \"enableRule\",\n                \"values\": [\n                    \"Disable\"\n                ]\n            },\n            {\n                \"templateKey\": \"rule\",\n                \"values\": [\n                    \"JsonThreatProtection_1\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleDescription\",\n                \"values\": [\n                    \"\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleName\",\n                \"values\": [\n                    \"JsonThreatProtection_1\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleType\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"isEnterpriseGatewayLicensed\",\n                \"values\": [\n                    \"true\"\n                ]\n            },\n            {\n                \"templateKey\": \"isRuleEnabled\",\n                \"values\": [\n                    \"false\"\n                ]\n            },\n            {\n                \"templateKey\": \"storedRuleType\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"storedRuleType\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            }\n        ],\n        \"policyEnforcements\": [\n            {\n                \"enforcements\": [\n                    {\n                        \"enforcementObjectId\": \"f029dbdc-d5bd-4ca9-a06b-f7dc071191dc\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"5c814829-ce00-4df9-90b2-f249ce2c2576\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"5cd2ee19-048a-4e59-b859-b2a5f2e67b2f\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"07097db5-766d-4fca-b1de-6a47bd1a1298\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"db9bb277-9bdd-4e09-9296-1a2ee7c123b2\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"bad749b0-9993-4945-b70d-44092802ecd7\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"46072b53-d6b6-41aa-85d4-08b66ca3788a\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"299b6db2-0545-4015-aa3e-8cdd54084b7c\",\n                        \"order\": null\n                    }\n                ],\n                \"stageKey\": \"threatProtection\"\n            }\n        ],\n        \"active\": false,\n        \"global\": true,\n        \"systemPolicy\": false,\n        \"policyActionTemplateKeys\": [\n            \"jsonThreatProtectionFilter\"\n        ]\n    }\n}"
+				}
+			]
+		}
+	]
+}
