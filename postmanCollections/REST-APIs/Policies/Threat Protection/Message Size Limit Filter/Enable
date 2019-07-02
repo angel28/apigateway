@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "5e60b549-1d6e-4973-913c-c06212d342cf",
+		"name": "Enable",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "\thttp://single4.gateway.webmcloud.com/rest/apigateway/policies/7bcef423-323d-4752-9770-aeed7d9ae4f5",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Test123$",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "single4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"policy\": {\n        \"id\": \"7bcef423-323d-4752-9770-aeed7d9ae4f5\",\n        \"names\": [\n            {\n                \"value\": \"MessageSizeRule\",\n                \"locale\": \"English\"\n            }\n        ],\n        \"parameters\": [\n            {\n                \"templateKey\": \"customErrorMessage\",\n                \"values\": [\n                    \"You have exceeded the message size limit\"\n                ]\n            },\n            {\n                \"templateKey\": \"action\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"requestType\",\n                \"values\": [\n                    \"ALL\"\n                ]\n            },\n            {\n                \"templateKey\": \"enableRule\",\n                \"values\": [\n                    \"Disable\"\n                ]\n            },\n            {\n                \"templateKey\": \"rule\",\n                \"values\": [\n                    \"MessageSizeRule\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleDescription\",\n                \"values\": [\n                    \"This rule will restrict the incoming request by evaluating the message size from incoming request\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleName\",\n                \"values\": [\n                    \"MessageSizeRule\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleType\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"isEnterpriseGatewayLicensed\",\n                \"values\": [\n                    \"true\"\n                ]\n            },\n            {\n                \"templateKey\": \"isRuleEnabled\",\n                \"values\": [\n                    \"true\"\n                ]\n            }\n        ],\n        \"policyEnforcements\": [\n            {\n                \"enforcements\": [\n                    {\n                        \"enforcementObjectId\": \"1a52e562-1d11-4562-9be2-f9ffdc6ed983\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"22225454-7343-45fc-b425-8a8720047250\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"77344ae9-e597-4597-a107-eaa84847128e\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"ee68b288-6403-4b7a-8ef7-9c669a6152b6\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"b935315c-f138-4b88-a513-4aeb97b3d39a\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"e926721a-134c-4481-8e83-1a5917ab86ba\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"1e2569f3-7b9b-447f-8dfb-89951cfcd84f\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"2843f990-3d26-44e3-a7f5-c8993762c746\",\n                        \"order\": null\n                    }\n                ],\n                \"stageKey\": \"threatProtection\"\n            }\n        ],\n        \"active\": false,\n        \"global\": true,\n        \"systemPolicy\": false,\n        \"policyActionTemplateKeys\": [\n            \"MsgSizeLimitFilter\"\n        ]\n    }\n}"
+				},
+				"url": {
+					"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/policies/7bcef423-323d-4752-9770-aeed7d9ae4f5",
+					"protocol": "http",
+					"host": [
+						"single4",
+						"gateway",
+						"webmcloud",
+						"com"
+					],
+					"path": [
+						"rest",
+						"apigateway",
+						"policies",
+						"7bcef423-323d-4752-9770-aeed7d9ae4f5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Enabled",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"policy\": {\n        \"id\": \"7bcef423-323d-4752-9770-aeed7d9ae4f5\",\n        \"names\": [\n            {\n                \"value\": \"MessageSizeRule\",\n                \"locale\": \"English\"\n            }\n        ],\n        \"parameters\": [\n            {\n                \"templateKey\": \"customErrorMessage\",\n                \"values\": [\n                    \"You have exceeded the message size limit\"\n                ]\n            },\n            {\n                \"templateKey\": \"action\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"requestType\",\n                \"values\": [\n                    \"ALL\"\n                ]\n            },\n            {\n                \"templateKey\": \"enableRule\",\n                \"values\": [\n                    \"Disable\"\n                ]\n            },\n            {\n                \"templateKey\": \"rule\",\n                \"values\": [\n                    \"MessageSizeRule\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleDescription\",\n                \"values\": [\n                    \"This rule will restrict the incoming request by evaluating the message size from incoming request\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleName\",\n                \"values\": [\n                    \"MessageSizeRule\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleType\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"isEnterpriseGatewayLicensed\",\n                \"values\": [\n                    \"true\"\n                ]\n            },\n            {\n                \"templateKey\": \"isRuleEnabled\",\n                \"values\": [\n                    \"true\"\n                ]\n            }\n        ],\n        \"policyEnforcements\": [\n            {\n                \"enforcements\": [\n                    {\n                        \"enforcementObjectId\": \"1a52e562-1d11-4562-9be2-f9ffdc6ed983\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"22225454-7343-45fc-b425-8a8720047250\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"77344ae9-e597-4597-a107-eaa84847128e\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"ee68b288-6403-4b7a-8ef7-9c669a6152b6\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"b935315c-f138-4b88-a513-4aeb97b3d39a\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"e926721a-134c-4481-8e83-1a5917ab86ba\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"1e2569f3-7b9b-447f-8dfb-89951cfcd84f\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"2843f990-3d26-44e3-a7f5-c8993762c746\",\n                        \"order\": null\n                    }\n                ],\n                \"stageKey\": \"threatProtection\"\n            }\n        ],\n        \"active\": false,\n        \"global\": true,\n        \"systemPolicy\": false,\n        \"policyActionTemplateKeys\": [\n            \"MsgSizeLimitFilter\"\n        ]\n    }\n}"
+						},
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/policies/7bcef423-323d-4752-9770-aeed7d9ae4f5",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"rest",
+								"apigateway",
+								"policies",
+								"7bcef423-323d-4752-9770-aeed7d9ae4f5"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 14 Jun 2019 07:29:34 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "APICLOUD-ALB"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1601"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"policy\": {\n        \"id\": \"7bcef423-323d-4752-9770-aeed7d9ae4f5\",\n        \"names\": [\n            {\n                \"value\": \"MessageSizeRule\",\n                \"locale\": \"English\"\n            }\n        ],\n        \"parameters\": [\n            {\n                \"templateKey\": \"customErrorMessage\",\n                \"values\": [\n                    \"You have exceeded the message size limit\"\n                ]\n            },\n            {\n                \"templateKey\": \"action\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"requestType\",\n                \"values\": [\n                    \"ALL\"\n                ]\n            },\n            {\n                \"templateKey\": \"enableRule\",\n                \"values\": [\n                    \"Disable\"\n                ]\n            },\n            {\n                \"templateKey\": \"rule\",\n                \"values\": [\n                    \"MessageSizeRule\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleDescription\",\n                \"values\": [\n                    \"This rule will restrict the incoming request by evaluating the message size from incoming request\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleName\",\n                \"values\": [\n                    \"MessageSizeRule\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleType\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"isEnterpriseGatewayLicensed\",\n                \"values\": [\n                    \"true\"\n                ]\n            },\n            {\n                \"templateKey\": \"isRuleEnabled\",\n                \"values\": [\n                    \"true\"\n                ]\n            },\n            {\n                \"templateKey\": \"storedRuleType\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            }\n        ],\n        \"policyEnforcements\": [\n            {\n                \"enforcements\": [\n                    {\n                        \"enforcementObjectId\": \"1a52e562-1d11-4562-9be2-f9ffdc6ed983\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"22225454-7343-45fc-b425-8a8720047250\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"77344ae9-e597-4597-a107-eaa84847128e\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"ee68b288-6403-4b7a-8ef7-9c669a6152b6\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"b935315c-f138-4b88-a513-4aeb97b3d39a\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"e926721a-134c-4481-8e83-1a5917ab86ba\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"1e2569f3-7b9b-447f-8dfb-89951cfcd84f\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"2843f990-3d26-44e3-a7f5-c8993762c746\",\n                        \"order\": null\n                    }\n                ],\n                \"stageKey\": \"threatProtection\"\n            }\n        ],\n        \"active\": true,\n        \"global\": true,\n        \"systemPolicy\": false,\n        \"policyActionTemplateKeys\": [\n            \"MsgSizeLimitFilter\"\n        ]\n    }\n}"
+				}
+			]
+		}
+	]
+}
