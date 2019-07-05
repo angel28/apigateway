@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "0b0c94d6-e3f6-4fee-abb6-1b9a1a57db63",
+		"name": "SOAP To REST Transformation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Employee",
+			"item": [
+				{
+					"name": "http://single4.gateway.webmcloud.com/ws/EmployeeServiceWSDL/1/addEmployeeFS",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Test123$",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "single4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"addEmployeeFS\": {\r\n\t\t\"Position\": \"13\",\r\n\t\t\"EmployeeFName\": \"Angel\",\r\n\t\t\"EmployeeLName\": \"m\",\r\n\t\t\"EmployeeAge\": \"22\"\r\n\t}\r\n}"
+						},
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/ws/EmployeeServiceWSDL/1/addEmployeeFS",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"ws",
+								"EmployeeServiceWSDL",
+								"1",
+								"addEmployeeFS"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "74fd4e22-2d33-466b-8207-b348c2cd8926",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "fccecc5a-b358-49cd-8b0d-121280dcac49",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Delete  Employee",
+			"item": [
+				{
+					"name": "http://single4.gateway.webmcloud.com/ws/EmployeeServiceWSDL/1/deleteEmployeeFS",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Test123$",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "single4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"deleteEmployeeFS\": {\r\n\t\t\"InputID\": \"14\"\r\n\t}\r\n}"
+						},
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/ws/EmployeeServiceWSDL/1/deleteEmployeeFS",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"ws",
+								"EmployeeServiceWSDL",
+								"1",
+								"deleteEmployeeFS"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "5b99dd9d-2682-4af8-963a-db9a534b360d",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "11c6e261-1cc3-47ae-91b7-28336c897e13",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "List all Employee",
+			"item": [
+				{
+					"name": "http://single4.gateway.webmcloud.com/ws/EmployeeWSDL/1/addEmployeeFS",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Test123$",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "single4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"employeeListFS\": \"\"\r\n}"
+						},
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/ws/EmployeeWSDL/1/employeeListFS",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"ws",
+								"EmployeeWSDL",
+								"1",
+								"employeeListFS"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "4f16f8e1-7cf5-4ef0-b454-7174f52b4005",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "4da4b042-40d9-4246-93c5-7d785b9dce27",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	]
+}
