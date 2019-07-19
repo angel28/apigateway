@@ -204,6 +204,55 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Remove Expired Access Token",
+			"item": [
+				{
+					"name": "http://single4.gateway.webmcloud.com/invoke/pub.oauth/removeExpiredAccessTokens",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Test123$",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "single4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/invoke/pub.oauth/removeExpiredAccessTokens",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"invoke",
+								"pub.oauth",
+								"removeExpiredAccessTokens"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	],
 	"event": [
