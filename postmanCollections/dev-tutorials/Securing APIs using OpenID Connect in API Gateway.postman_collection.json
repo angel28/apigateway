@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "68a0fe91-3dcf-4c1c-a8d4-9c8d23f026db",
+		"name": "Securing APIs using OpenID Connect in API Gateway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Getting Access Token",
+			"item": [
+				{
+					"name": "http://single4.gateway.webmcloud.com/gateway/security/exchangeIDToken",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Test@123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "single4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Gateway-APIKey",
+								"value": "7c948f55-47fb-4dd7-9b55-6fc79575ac43",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"gatewayScopes\": [\"Google:view\"],\r\n\"idToken\": \"eyJhbGciOiJSUzI1NiIsImtpZCI6ImRmOGQ5ZWU0MDNiY2M3MTg1YWQ1MTA0MTE5NGJkMzQzMzc0MmQ5YWEiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiI0MDc0MDg3MTgxOTIuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhdWQiOiI0MDc0MDg3MTgxOTIuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJzdWIiOiIxMDkyOTQ2NDkyMjAzNDI4MTM3MTgiLCJhdF9oYXNoIjoiY3BGeEs5bjhoS1ZSUmlMQWtISS1pUSIsImlhdCI6MTU2NjI5NDQ4OCwiZXhwIjoxNTY2Mjk4MDg4fQ.OgQDSinAtWHnWGNKED9MKIfMsAcp_9wcc2AISD0TqkcCslSNouW748cCXN56T2BxxUj-eBxpOmmI2Q_UIpZnqA7XOYcIkWjB3LHtyG7timEhitsovTcEKBjAM9-pqyt61QIBafqcSWvNqoLR_EMFpklMxT0aqAj4ULp8bDiXZlaxEnHjNTUzV172O9exlpbvW5VaRf75_mMOcPCeHg-XNDbg4sewMDtuXwuqG8JPl8tiMgnaMLhdpH4WshZOx9DkM9EjV2Bm9EXeA8HpEHvNZXyiwrF0xSMiheTeLpL8QtuqTi5gWsimrneQrIMshw72ROnjWNDYzjRBmR4eJhBilw\",\r\n\"expiry\":3600\r\n}"
+						},
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/gateway/security/exchangeIDToken",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"gateway",
+								"security",
+								"exchangeIDToken"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Invoking API without using Token",
+			"item": [
+				{
+					"name": "http://single4.gateway.webmcloud.com/gateway/Time%20travels/3.0/booking",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Test@123",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "single4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/gateway/Time%20travels/3.0/booking",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"gateway",
+								"Time%20travels",
+								"3.0",
+								"booking"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Invoking API using Token",
+			"item": [
+				{
+					"name": "http://single4.gateway.webmcloud.com/gateway/Time%20travels/3.0/booking",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJzc29zIiwiYWxnIjoiUlMyNTYifQ.eyJzY3AiOlsidmlldyJdLCJ1aWQiOiIxMDkyOTQ2NDkyMjAzNDI4MTM3MTgiLCJzdWIiOiI0MDc0MDg3MTgxOTIuYXBwcy5nb29nbGV1c2VyY29udGVudC5jb20iLCJhenAiOiI1NjJhYjk3Ny00ZjMxLTRkMjEtYmJkNC1lZTE0M2M2OTI5MjYiLCJpc3MiOiJteWNvbXBhbnkuY29tIiwiZXhwIjoxNTY2Mjk4MTY0LCJpYXQiOjE1NjYyOTQ1NjQsImp0aSI6ImZhNjcxN2QzLWMwMmEtNGY4Ny05NTc1LTdlMDYyNzFmMmM3YiJ9.CpMMQusOMEyNbA16Y3Nh6JhhsZwseF8HRA2ZNoG1-f1JH4uxP0MwGwi3-TEtI_P57ThhTRqe3Nqd4lGS_frMdDh4LE-UMF8RTd4FW2XrT7GyzLHXVsubX5z_44mxKiAaaQWxw9mcqQfzCzGcWS2UyyGrQjwMaQcwb1dnKliyXqMR_SEzWuMYjtL6goDgLQ8JYuESSaCyT52TNwIDoEZKAMvL82wv13T15oMlDtQWhob5aSxM47k-_MBNI6ywWXh3gKyIn8kQ-1dCap8-XkIQnPKyjR9tI8ILumQ9DuFVNXu2l562RdzCxVqvdwFfe-_tRualP8en1qVXZIABR6SaFg",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/gateway/Time%20travels/3.0/booking",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"gateway",
+								"Time%20travels",
+								"3.0",
+								"booking"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
