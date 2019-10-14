@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "bcc9f790-9504-47f1-93cb-87d11b8a3812",
+		"_postman_id": "353efa72-a7a4-4a61-9b29-d298eaa299f7",
 		"name": "Secure API using OAuth 2  in API Gateway ",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -198,55 +198,6 @@
 								"invoke",
 								"pub.oauth",
 								"refreshAccessToken"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "Remove Expired Access Token",
-			"item": [
-				{
-					"name": "http://single4.gateway.webmcloud.com/invoke/pub.oauth/removeExpiredAccessTokens",
-					"request": {
-						"auth": {
-							"type": "basic",
-							"basic": [
-								{
-									"key": "password",
-									"value": "Test123$",
-									"type": "string"
-								},
-								{
-									"key": "username",
-									"value": "single4",
-									"type": "string"
-								}
-							]
-						},
-						"method": "GET",
-						"header": [
-							{
-								"key": "Accept",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"url": {
-							"raw": "http://single4.gateway.webmcloud.com/invoke/pub.oauth/removeExpiredAccessTokens",
-							"protocol": "http",
-							"host": [
-								"single4",
-								"gateway",
-								"webmcloud",
-								"com"
-							],
-							"path": [
-								"invoke",
-								"pub.oauth",
-								"removeExpiredAccessTokens"
 							]
 						}
 					},
