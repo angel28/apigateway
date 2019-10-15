@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "0b0c94d6-e3f6-4fee-abb6-1b9a1a57db63",
+		"_postman_id": "347078b5-b39c-4a9d-b69f-7f2a46077994",
 		"name": "SOAP To REST Transformation",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -16,7 +16,7 @@
 							"basic": [
 								{
 									"key": "password",
-									"value": "Test123$",
+									"value": "Test@123",
 									"type": "string"
 								},
 								{
@@ -42,7 +42,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n\t\"addEmployeeFS\": {\r\n\t\t\"Position\": \"13\",\r\n\t\t\"EmployeeFName\": \"Angel\",\r\n\t\t\"EmployeeLName\": \"m\",\r\n\t\t\"EmployeeAge\": \"22\"\r\n\t}\r\n}"
+							"raw": "{\r\n\t\"addEmployeeFS\": {\r\n\t\t\"Position\": \"51\",\r\n\t\t\"EmployeeFName\": \"Angel\",\r\n\t\t\"EmployeeLName\": \"m\",\r\n\t\t\"EmployeeAge\": \"22\"\r\n\t}\r\n}"
 						},
 						"url": {
 							"raw": "http://single4.gateway.webmcloud.com/ws/EmployeeServiceWSDL/1/addEmployeeFS",

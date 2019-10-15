@@ -58,54 +58,6 @@
 			]
 		},
 		{
-			"name": "Getting access token",
-			"item": [
-				{
-					"name": "https://single4.gateway.webmcloud.com/invoke/pub.oauth/getAccessToken",
-					"request": {
-						"auth": {
-							"type": "oauth2",
-							"oauth2": [
-								{
-									"key": "addTokenTo",
-									"value": "header",
-									"type": "string"
-								}
-							]
-						},
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/json",
-								"type": "text"
-							}
-						],
-						"body": {
-							"mode": "raw",
-							"raw": "{\n\"code\":\"86ada94ac21a4516a27881b0a48d001b\",\n\"redirect_uri\":\"http://bookyourticket.com/redirect\",\n\"grant_type\":\"authorization_code\",\n\"client_id\":\"f03f3e72-7dda-4006-b678-2d2e7469faab\",\n\"scope\":\"book\"\n}"
-						},
-						"url": {
-							"raw": "https://single4.gateway.webmcloud.com/invoke/pub.oauth/getAccessToken",
-							"protocol": "https",
-							"host": [
-								"single4",
-								"gateway",
-								"webmcloud",
-								"com"
-							],
-							"path": [
-								"invoke",
-								"pub.oauth",
-								"getAccessToken"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
 			"name": "Invoking the API  by using Token",
 			"item": [
 				{
@@ -198,6 +150,54 @@
 								"invoke",
 								"pub.oauth",
 								"refreshAccessToken"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Getting access token",
+			"item": [
+				{
+					"name": "https://single4.gateway.webmcloud.com/invoke/pub.oauth/getAccessToken",
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": [
+								{
+									"key": "addTokenTo",
+									"value": "header",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\"code\":\"86ada94ac21a4516a27881b0a48d001b\",\n\"redirect_uri\":\"http://bookyourticket.com/redirect\",\n\"grant_type\":\"authorization_code\",\n\"client_id\":\"f03f3e72-7dda-4006-b678-2d2e7469faab\",\n\"scope\":\"book\"\n}"
+						},
+						"url": {
+							"raw": "https://single4.gateway.webmcloud.com/invoke/pub.oauth/getAccessToken",
+							"protocol": "https",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"invoke",
+								"pub.oauth",
+								"getAccessToken"
 							]
 						}
 					},
