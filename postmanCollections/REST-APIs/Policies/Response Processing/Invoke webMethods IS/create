@@ -1,12 +1,26 @@
 {
 	"info": {
-		"_postman_id": "677387d5-318a-4195-b424-eb6e558a8c87",
+		"_postman_id": "d0fe5bd3-6450-4604-b8cd-c88bb1a4467e",
 		"name": "create",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
 			"name": "http://single4.gateway.webmcloud.com/rest/apigateway/policyActions",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "dc3b076b-4c36-4915-9e53-240bbc73aa96",
+						"exec": [
+							"var jsonData = pm.response.json();\r",
+							"\r",
+							"pm.environment.set(\"policyActionIdResponseInvokeWebMethodIS\", jsonData.policyAction.id);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"auth": {
 					"type": "basic",
@@ -123,5 +137,6 @@
 				}
 			]
 		}
-	]
+	],
+	"protocolProfileBehavior": {}
 }
