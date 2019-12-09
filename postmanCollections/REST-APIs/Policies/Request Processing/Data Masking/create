@@ -1,12 +1,26 @@
 {
 	"info": {
-		"_postman_id": "5f849d11-1240-4208-ac4b-5d879b490385",
+		"_postman_id": "d0fe5bd3-6450-4604-b8cd-c88bb1a4467e",
 		"name": "create",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
 			"name": "\thttp://single4.gateway.webmcloud.com/rest/apigateway/policyActions",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e776ff96-98d1-4253-91ec-cd16eea872bf",
+						"exec": [
+							"var jsonData = pm.response.json();\r",
+							"\r",
+							"pm.environment.set(\"policyActionIdDataMasking\", jsonData.policyAction.id);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"auth": {
 					"type": "basic",
@@ -33,7 +47,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"policyAction\": {\n       \n        \"names\": [\n            {\n                \"value\": \"Data Masking\",\n                \"locale\": \"en\"\n            }\n        ],\n        \"templateKey\": \"requestDataMasking\",\n        \"parameters\": [\n            {\n                \"templateKey\": \"jpathMasking\",\n                \"parameters\": [\n                    {\n                        \"templateKey\": \"maskingCriteria\",\n                        \"parameters\": [\n                            {\n                                \"templateKey\": \"action\",\n                                \"values\": [\n                                    \"$..empName\"\n                                ]\n                            },\n                            {\n                                \"templateKey\": \"maskingType\",\n                                \"values\": [\n                                    \"mask\"\n                                ]\n                            },\n                            {\n                                \"templateKey\": \"maskValue\",\n                                \"values\": [\n                                    \"********\"\n                                ]\n                            }\n                        ]\n                    }\n                ]\n            },\n            {\n                \"templateKey\": \"sameForTransactionalLogging\",\n                \"values\": [\n                    \"true\"\n                ]\n            },\n            {\n                \"templateKey\": \"applyForPayload\",\n                \"values\": [\n                    \"true\"\n                ]\n            }\n        ],\n        \"active\": false\n    }\n}"
+					"raw": "{\r\n    \"policyAction\": {\r\n        \"id\": \"b7d725fe-321a-4d2c-b8ab-9792b7ff6bd0\",\r\n        \"names\": [\r\n            {\r\n                \"value\": \"Data Masking\",\r\n                \"locale\": \"en\"\r\n            }\r\n        ],\r\n        \"templateKey\": \"requestDataMasking\",\r\n        \"parameters\": [\r\n            {\r\n                \"templateKey\": \"sameForTransactionalLogging\",\r\n                \"values\": [\r\n                    \"true\"\r\n                ]\r\n            },\r\n            {\r\n                \"templateKey\": \"applyForPayload\",\r\n                \"values\": [\r\n                    \"true\"\r\n                ]\r\n            }\r\n        ],\r\n        \"active\": false\r\n    }\r\n}"
 				},
 				"url": {
 					"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/policyActions",
@@ -113,5 +127,6 @@
 				}
 			]
 		}
-	]
+	],
+	"protocolProfileBehavior": {}
 }
