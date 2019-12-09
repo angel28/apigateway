@@ -1,12 +1,27 @@
 {
 	"info": {
-		"_postman_id": "677387d5-318a-4195-b424-eb6e558a8c87",
+		"_postman_id": "d0fe5bd3-6450-4604-b8cd-c88bb1a4467e",
 		"name": "create",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "http://single4.gateway.webmcloud.com/rest/apigateway/policyActions/dd451866-8a08-40f0-ba12-73e07a5c0b6e",
+			"name": "http://single4.gateway.webmcloud.com/rest/apigateway/policyActions",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "042935fa-13e9-47a3-8d4e-4105efbeda2f",
+						"exec": [
+							"\r",
+							"var jsonData = pm.response.json();\r",
+							"\r",
+							"pm.environment.set(\"policyActionIdInvokeWebMethodIS\", jsonData.policyAction.id);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"auth": {
 					"type": "basic",
@@ -41,7 +56,7 @@
 					"raw": "{\n    \"policyAction\": {\n      \n        \"names\": [\n            {\n                \"value\": \"Invoke webMethods IS\",\n                \"locale\": \"en\"\n            }\n        ],\n        \"templateKey\": \"requestInvokeESB\",\n        \"parameters\": [\n            {\n                \"templateKey\": \"esbAlias\",\n                \"values\": [\n                    \"webMethodsIsServiceAlias1\"\n                ]\n            }\n        ],\n        \"active\": false\n    }\n}"
 				},
 				"url": {
-					"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/policyActions/dd451866-8a08-40f0-ba12-73e07a5c0b6e",
+					"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/policyActions",
 					"protocol": "http",
 					"host": [
 						"single4",
@@ -52,8 +67,7 @@
 					"path": [
 						"rest",
 						"apigateway",
-						"policyActions",
-						"dd451866-8a08-40f0-ba12-73e07a5c0b6e"
+						"policyActions"
 					]
 				}
 			},
@@ -125,5 +139,6 @@
 				}
 			]
 		}
-	]
+	],
+	"protocolProfileBehavior": {}
 }
