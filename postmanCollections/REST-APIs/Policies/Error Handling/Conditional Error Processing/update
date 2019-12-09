@@ -27,19 +27,18 @@
 				"header": [
 					{
 						"key": "Content-Type",
-						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
 						"value": "application/json",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"policy\": {\r\n        \"id\": \"{{policyID}}\",\r\n        \"names\": [\r\n            {\r\n                \"value\": \"Default Policy for API StudentRecord\",\r\n                \"locale\": \"English\"\r\n            }\r\n        ],\r\n        \"descriptions\": [\r\n            {\r\n                \"value\": \"\",\r\n                \"locale\": \"English\"\r\n            }\r\n        ],\r\n        \"scope\": {\r\n            \"scopeConditions\": []\r\n        },\r\n        \"policyEnforcements\": [\r\n            {\r\n                \"enforcements\": [\r\n                    {\r\n                        \"enforcementObjectId\": \"{{policyActionIdStraightThroughRouting}}\",\r\n                        \"order\": null\r\n                    }\r\n                ],\r\n                \"stageKey\": \"routing\"\r\n            },\r\n            {\r\n                \"enforcements\": [\r\n                    {\r\n                        \"enforcementObjectId\": \"{{policyActionIdErrorHandlingDataMasking}}\",\r\n                        \"order\": null\r\n                    }\r\n                ],\r\n                \"stageKey\": \"responseFaultProcessing\"\r\n            },\r\n            {\r\n                \"enforcements\": [\r\n                    {\r\n                        \"enforcementObjectId\": \"{{policyActionIDTransport}}\",\r\n                        \"order\": null\r\n                    }\r\n                ],\r\n                \"stageKey\": \"transport\"\r\n            }\r\n        ],\r\n        \"policyScope\": \"SERVICE\",\r\n        \"active\": false,\r\n        \"global\": false,\r\n        \"systemPolicy\": false\r\n    }\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
+					"raw": "{\r\n    \"policy\": {\r\n        \"id\": \"{{policyID}}\",\r\n        \"names\": [\r\n            {\r\n                \"value\": \"Default Policy for API StudentRecord\",\r\n                \"locale\": \"English\"\r\n            }\r\n        ],\r\n        \"descriptions\": [\r\n            {\r\n                \"value\": \"\",\r\n                \"locale\": \"English\"\r\n            }\r\n        ],\r\n        \"scope\": {\r\n            \"scopeConditions\": []\r\n        },\r\n        \"policyEnforcements\": [\r\n            {\r\n                \"enforcements\": [\r\n                    {\r\n                        \"enforcementObjectId\": \"{{policyActionIdStraightThroughRouting}}\",\r\n                        \"order\": null\r\n                    }\r\n                ],\r\n                \"stageKey\": \"routing\"\r\n            },\r\n            {\r\n                \"enforcements\": [\r\n                    {\r\n                        \"enforcementObjectId\": \"{{policyActionIdConditionalErrorProcessing}}\",\r\n                        \"order\": null\r\n                    }\r\n                ],\r\n                \"stageKey\": \"responseFaultProcessing\"\r\n            },\r\n            {\r\n                \"enforcements\": [\r\n                    {\r\n                        \"enforcementObjectId\": \"{{policyActionIDTransport}}\",\r\n                        \"order\": null\r\n                    }\r\n                ],\r\n                \"stageKey\": \"transport\"\r\n            }\r\n        ],\r\n        \"policyScope\": \"SERVICE\",\r\n        \"active\": false,\r\n        \"global\": false,\r\n        \"systemPolicy\": false\r\n    }\r\n}"
 				},
 				"url": {
 					"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/policies/{{policyID}}",
@@ -68,11 +67,16 @@
 								"key": "Content-Type",
 								"value": "application/json",
 								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"policy\": {\r\n        \"id\": \"f388886f-151b-444b-a5ab-e236f9f19101\",\r\n        \"names\": [\r\n            {\r\n                \"value\": \"Default Policy for API StudentRecord\",\r\n                \"locale\": \"English\"\r\n            }\r\n        ],\r\n        \"descriptions\": [\r\n            {\r\n                \"value\": \"\",\r\n                \"locale\": \"English\"\r\n            }\r\n        ],\r\n        \"scope\": {\r\n            \"scopeConditions\": []\r\n        },\r\n        \"policyEnforcements\": [\r\n            {\r\n                \"enforcements\": [\r\n                    {\r\n                        \"enforcementObjectId\": \"bafbf573-3f40-4e42-b9bb-90a03214794f\",\r\n                        \"order\": null\r\n                    }\r\n                ],\r\n                \"stageKey\": \"routing\"\r\n            },\r\n            {\r\n                \"enforcements\": [\r\n                    {\r\n                        \"enforcementObjectId\": \"71695bdc-3ca5-45fb-b579-2cdefd6fe34e\",\r\n                        \"order\": null\r\n                    }\r\n                ],\r\n                \"stageKey\": \"responseFaultProcessing\"\r\n            },\r\n            {\r\n                \"enforcements\": [\r\n                    {\r\n                        \"enforcementObjectId\": \"a5414179-ae33-4c4c-a4f3-2981fb9aaf7f\",\r\n                        \"order\": null\r\n                    }\r\n                ],\r\n                \"stageKey\": \"transport\"\r\n            }\r\n        ],\r\n        \"policyScope\": \"SERVICE\",\r\n        \"active\": false,\r\n        \"global\": false,\r\n        \"systemPolicy\": false\r\n    }\r\n}"
+							"raw": "{\r\n    \"policy\": {\r\n        \"id\": \"f388886f-151b-444b-a5ab-e236f9f19101\",\r\n        \"names\": [\r\n            {\r\n                \"value\": \"Default Policy for API StudentRecord\",\r\n                \"locale\": \"English\"\r\n            }\r\n        ],\r\n        \"descriptions\": [\r\n            {\r\n                \"value\": \"\",\r\n                \"locale\": \"English\"\r\n            }\r\n        ],\r\n        \"scope\": {\r\n            \"scopeConditions\": []\r\n        },\r\n        \"policyEnforcements\": [\r\n            {\r\n                \"enforcements\": [\r\n                    {\r\n                        \"enforcementObjectId\": \"bafbf573-3f40-4e42-b9bb-90a03214794f\",\r\n                        \"order\": null\r\n                    }\r\n                ],\r\n                \"stageKey\": \"routing\"\r\n            },\r\n            {\r\n                \"enforcements\": [\r\n                    {\r\n                        \"enforcementObjectId\": \"268b141c-f757-439d-bb9d-d31f7aa71b71\",\r\n                        \"order\": null\r\n                    }\r\n                ],\r\n                \"stageKey\": \"responseFaultProcessing\"\r\n            },\r\n            {\r\n                \"enforcements\": [\r\n                    {\r\n                        \"enforcementObjectId\": \"a5414179-ae33-4c4c-a4f3-2981fb9aaf7f\",\r\n                        \"order\": null\r\n                    }\r\n                ],\r\n                \"stageKey\": \"transport\"\r\n            }\r\n        ],\r\n        \"policyScope\": \"SERVICE\",\r\n        \"active\": false,\r\n        \"global\": false,\r\n        \"systemPolicy\": false\r\n    }\r\n}"
 						},
 						"url": {
 							"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/policies/f388886f-151b-444b-a5ab-e236f9f19101",
@@ -101,7 +105,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Fri, 14 Jun 2019 08:31:47 GMT"
+							"value": "Tue, 02 Jul 2019 05:38:53 GMT"
 						},
 						{
 							"key": "Server",
@@ -117,10 +121,9 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"policy\": {\n        \"id\": \"f388886f-151b-444b-a5ab-e236f9f19101\",\n        \"names\": [\n            {\n                \"value\": \"Default Policy for API StudentRecord\",\n                \"locale\": \"English\"\n            }\n        ],\n        \"descriptions\": [\n            {\n                \"value\": \"\",\n                \"locale\": \"English\"\n            }\n        ],\n        \"scope\": {\n            \"scopeConditions\": []\n        },\n        \"policyEnforcements\": [\n            {\n                \"enforcements\": [\n                    {\n                        \"enforcementObjectId\": \"bafbf573-3f40-4e42-b9bb-90a03214794f\",\n                        \"order\": null\n                    }\n                ],\n                \"stageKey\": \"routing\"\n            },\n            {\n                \"enforcements\": [\n                    {\n                        \"enforcementObjectId\": \"71695bdc-3ca5-45fb-b579-2cdefd6fe34e\",\n                        \"order\": null\n                    }\n                ],\n                \"stageKey\": \"responseFaultProcessing\"\n            },\n            {\n                \"enforcements\": [\n                    {\n                        \"enforcementObjectId\": \"a5414179-ae33-4c4c-a4f3-2981fb9aaf7f\",\n                        \"order\": null\n                    }\n                ],\n                \"stageKey\": \"transport\"\n            }\n        ],\n        \"policyScope\": \"SERVICE\",\n        \"active\": false,\n        \"global\": false,\n        \"systemPolicy\": false\n    }\n}"
+					"body": "{\n    \"policy\": {\n        \"id\": \"f388886f-151b-444b-a5ab-e236f9f19101\",\n        \"names\": [\n            {\n                \"value\": \"Default Policy for API StudentRecord\",\n                \"locale\": \"English\"\n            }\n        ],\n        \"descriptions\": [\n            {\n                \"value\": \"\",\n                \"locale\": \"English\"\n            }\n        ],\n        \"scope\": {\n            \"scopeConditions\": []\n        },\n        \"policyEnforcements\": [\n            {\n                \"enforcements\": [\n                    {\n                        \"enforcementObjectId\": \"bafbf573-3f40-4e42-b9bb-90a03214794f\",\n                        \"order\": null\n                    }\n                ],\n                \"stageKey\": \"routing\"\n            },\n            {\n                \"enforcements\": [\n                    {\n                        \"enforcementObjectId\": \"268b141c-f757-439d-bb9d-d31f7aa71b71\",\n                        \"order\": null\n                    }\n                ],\n                \"stageKey\": \"responseFaultProcessing\"\n            },\n            {\n                \"enforcements\": [\n                    {\n                        \"enforcementObjectId\": \"a5414179-ae33-4c4c-a4f3-2981fb9aaf7f\",\n                        \"order\": null\n                    }\n                ],\n                \"stageKey\": \"transport\"\n            }\n        ],\n        \"policyScope\": \"SERVICE\",\n        \"active\": false,\n        \"global\": false,\n        \"systemPolicy\": false\n    }\n}"
 				}
 			]
 		}
 	],
 	"protocolProfileBehavior": {}
-}
