@@ -13,7 +13,7 @@
 					"basic": [
 						{
 							"key": "password",
-							"value": "Test@123",
+							"value": "Test123$",
 							"type": "string"
 						},
 						{
