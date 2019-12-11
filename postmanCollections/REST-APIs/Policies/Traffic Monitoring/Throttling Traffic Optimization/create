@@ -1,12 +1,29 @@
 {
 	"info": {
-		"_postman_id": "4317840e-8a77-4c45-9590-d5f15f2814c7",
+		"_postman_id": "d0fe5bd3-6450-4604-b8cd-c88bb1a4467e",
 		"name": "create",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "http://single4.gateway.webmcloud.com/rest/apigateway/policyActions/1155729e-fab6-455c-8a05-756de1603c5f",
+			"name": "http://single4.gateway.webmcloud.com/rest/apigateway/policyActions",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "23484dd4-b3cd-4313-ade1-5ebe83437988",
+						"exec": [
+							"\r",
+							"\r",
+							"\r",
+							"var jsonData = pm.response.json();\r",
+							"\r",
+							"pm.environment.set(\"policyActionIdThrottlingTrafficOptimization\", jsonData.policyAction.id);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"auth": {
 					"type": "basic",
@@ -41,7 +58,7 @@
 					"raw": "{\n    \"policyAction\": {\n       \n        \"names\": [\n            {\n                \"value\": \"Throttling Traffic Optimization\",\n                \"locale\": \"en\"\n            }\n        ],\n        \"templateKey\": \"throttle\",\n        \"parameters\": [\n            {\n                \"templateKey\": \"throttleRule\",\n                \"parameters\": [\n                    {\n                        \"templateKey\": \"throttleRuleName\",\n                        \"values\": [\n                            \"requestCount\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"monitorRuleOperator\",\n                        \"values\": [\n                            \"GT\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"value\",\n                        \"values\": [\n                            \"2\"\n                        ]\n                    }\n                ]\n            },\n            {\n                \"templateKey\": \"destination\",\n                \"parameters\": [\n                    {\n                        \"templateKey\": \"destinationType\",\n                        \"values\": [\n                            \"GATEWAY\"\n                        ]\n                    }\n                ]\n            },\n            {\n                \"templateKey\": \"alertInterval\",\n                \"values\": [\n                    \"3\"\n                ]\n            },\n            {\n                \"templateKey\": \"alertIntervalUnit\",\n                \"values\": [\n                    \"minutes\"\n                ]\n            },\n            {\n                \"templateKey\": \"alertFrequency\",\n                \"values\": [\n                    \"once\"\n                ]\n            },\n            {\n                \"templateKey\": \"alertMessage\",\n                \"values\": [\n                    \"Alert\"\n                ]\n            },\n            {\n                \"templateKey\": \"consumerIds\",\n                \"values\": [\n                    \"36bc6fd1-19ae-4e9a-829a-3c5e516d8eaf\"\n                ]\n            }\n        ],\n        \"active\": false\n    }\n}"
 				},
 				"url": {
-					"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/policyActions/1155729e-fab6-455c-8a05-756de1603c5f",
+					"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/policyActions",
 					"protocol": "http",
 					"host": [
 						"single4",
@@ -52,8 +69,7 @@
 					"path": [
 						"rest",
 						"apigateway",
-						"policyActions",
-						"1155729e-fab6-455c-8a05-756de1603c5f"
+						"policyActions"
 					]
 				}
 			},
@@ -125,5 +141,6 @@
 				}
 			]
 		}
-	]
+	],
+	"protocolProfileBehavior": {}
 }
