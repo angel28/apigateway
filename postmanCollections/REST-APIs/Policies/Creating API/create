@@ -1,1 +1,84 @@
-
+{
+	"info": {
+		"_postman_id": "d0fe5bd3-6450-4604-b8cd-c88bb1a4467e",
+		"name": "create",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://single4.gateway.webmcloud.com/rest/apigateway/apis/",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "65c713ff-2a62-4c66-bb2d-19dc4063048f",
+						"exec": [
+							"var jsonData = pm.response.json();\r",
+							"pm.environment.set(\"apiID\", jsonData.apiResponse.api.id);\r",
+							"pm.environment.set(\"policyID\", jsonData.apiResponse.api.policies[0]);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Test123$",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "single4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"apiName\": \"SampleChainnigRequest\",\r\n \"apiDescription\": \"api creation with policy\",\r\n \"url\": \"https://petstore.swagger.io/v2/swagger.json\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/apis/",
+					"protocol": "http",
+					"host": [
+						"single4",
+						"gateway",
+						"webmcloud",
+						"com"
+					],
+					"path": [
+						"rest",
+						"apigateway",
+						"apis",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
