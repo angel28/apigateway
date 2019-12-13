@@ -1,1 +1,119 @@
 
+{
+	"info": {
+		"_postman_id": "16688baa-51c0-4a79-83d9-f973bfca1678",
+		"name": "update",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://single4.gateway.webmcloud.com/rest/apigateway/policies/26082318-a173-4858-b8b1-5658d1e9409b",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Test123$",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "single4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"policy\": {\r\n        \"id\": \"26082318-a173-4858-b8b1-5658d1e9409b\",\r\n        \"names\": [\r\n            {\r\n                \"value\": \"AntiVirusFilter\",\r\n                \"locale\": \"English\"\r\n            }\r\n        ],\r\n        \"parameters\": [\r\n            {\r\n                \"templateKey\": \"customErrorMessage\",\r\n                \"values\": [\r\n                    \"\"\r\n                ]\r\n            },\r\n            {\r\n                \"templateKey\": \"action\",\r\n                \"values\": [\r\n                    \"DENY\"\r\n                ]\r\n            },\r\n            {\r\n                \"templateKey\": \"requestType\",\r\n                \"values\": [\r\n                    \"ALL\"\r\n                ]\r\n            },\r\n            {\r\n                \"templateKey\": \"enableRule\",\r\n                \"values\": [\r\n                    \"Disable\"\r\n                ]\r\n            },\r\n            {\r\n                \"templateKey\": \"rule\",\r\n                \"values\": [\r\n                    \"AntiVirusFilter\"\r\n                ]\r\n            },\r\n            {\r\n                \"templateKey\": \"ruleDescription\",\r\n                \"values\": [\r\n                    \"\"\r\n                ]\r\n            },\r\n            {\r\n                \"templateKey\": \"ruleName\",\r\n                \"values\": [\r\n                    \"AntiVirusFilter\"\r\n                ]\r\n            },\r\n            {\r\n                \"templateKey\": \"ruleType\",\r\n                \"values\": [\r\n                    \"DENY\"\r\n                ]\r\n            },\r\n            {\r\n                \"templateKey\": \"isEnterpriseGatewayLicensed\",\r\n                \"values\": [\r\n                    \"true\"\r\n                ]\r\n            },\r\n            {\r\n                \"templateKey\": \"storedRuleType\",\r\n                \"values\": [\r\n                    \"DENY\"\r\n                ]\r\n            },\r\n            {\r\n                \"templateKey\": \"storedRuleType\",\r\n                \"values\": [\r\n                    \"DENY\"\r\n                ]\r\n            },\r\n            {\r\n                \"templateKey\": \"isRuleEnabled\",\r\n                \"values\": [\r\n                    \"true\"\r\n                ]\r\n            }\r\n        ],\r\n        \"policyEnforcements\": [\r\n            {\r\n                \"enforcements\": [\r\n                    {\r\n                        \"enforcementObjectId\": \"50f0c609-2edc-4cdc-8895-9c69ae6ed805\",\r\n                        \"order\": null\r\n                    },\r\n                    {\r\n                        \"enforcementObjectId\": \"2fb26a27-3468-42f3-80f5-cbb7e534dde6\",\r\n                        \"order\": null\r\n                    },\r\n                    {\r\n                        \"enforcementObjectId\": \"c3b2007c-9eec-48ee-a458-177519ada71d\",\r\n                        \"order\": null\r\n                    },\r\n                    {\r\n                        \"enforcementObjectId\": \"25a55a09-0804-4e08-bda6-c4260f64071e\",\r\n                        \"order\": null\r\n                    },\r\n                    {\r\n                        \"enforcementObjectId\": \"1476bedb-03ee-4601-bd0e-08fd37a3100a\",\r\n                        \"order\": null\r\n                    },\r\n                    {\r\n                        \"enforcementObjectId\": \"9ab55036-5db3-456e-986c-ec7dc3055ab6\",\r\n                        \"order\": null\r\n                    },\r\n                    {\r\n                        \"enforcementObjectId\": \"0c3abb51-f751-4442-81ce-6dbf600c7b6a\",\r\n                        \"order\": null\r\n                    },\r\n                    {\r\n                        \"enforcementObjectId\": \"4ca2a93e-aa40-4731-9a98-4f3a676aa512\",\r\n                        \"order\": null\r\n                    }\r\n                ],\r\n                \"stageKey\": \"threatProtection\"\r\n            }\r\n        ],\r\n        \"global\": true,\r\n        \"active\": true,\r\n        \"systemPolicy\": false,\r\n        \"policyActionTemplateKeys\": [\r\n            \"antiVirusFilter\"\r\n        ]\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/policies/26082318-a173-4858-b8b1-5658d1e9409b",
+					"protocol": "http",
+					"host": [
+						"single4",
+						"gateway",
+						"webmcloud",
+						"com"
+					],
+					"path": [
+						"rest",
+						"apigateway",
+						"policies",
+						"26082318-a173-4858-b8b1-5658d1e9409b"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Enable",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"policy\": {\r\n        \"id\": \"26082318-a173-4858-b8b1-5658d1e9409b\",\r\n        \"names\": [\r\n            {\r\n                \"value\": \"AntiVirusFilter\",\r\n                \"locale\": \"English\"\r\n            }\r\n        ],\r\n        \"parameters\": [\r\n            {\r\n                \"templateKey\": \"customErrorMessage\",\r\n                \"values\": [\r\n                    \"\"\r\n                ]\r\n            },\r\n            {\r\n                \"templateKey\": \"action\",\r\n                \"values\": [\r\n                    \"DENY\"\r\n                ]\r\n            },\r\n            {\r\n                \"templateKey\": \"requestType\",\r\n                \"values\": [\r\n                    \"ALL\"\r\n                ]\r\n            },\r\n            {\r\n                \"templateKey\": \"enableRule\",\r\n                \"values\": [\r\n                    \"Disable\"\r\n                ]\r\n            },\r\n            {\r\n                \"templateKey\": \"rule\",\r\n                \"values\": [\r\n                    \"AntiVirusFilter\"\r\n                ]\r\n            },\r\n            {\r\n                \"templateKey\": \"ruleDescription\",\r\n                \"values\": [\r\n                    \"\"\r\n                ]\r\n            },\r\n            {\r\n                \"templateKey\": \"ruleName\",\r\n                \"values\": [\r\n                    \"AntiVirusFilter\"\r\n                ]\r\n            },\r\n            {\r\n                \"templateKey\": \"ruleType\",\r\n                \"values\": [\r\n                    \"DENY\"\r\n                ]\r\n            },\r\n            {\r\n                \"templateKey\": \"isEnterpriseGatewayLicensed\",\r\n                \"values\": [\r\n                    \"true\"\r\n                ]\r\n            },\r\n            {\r\n                \"templateKey\": \"storedRuleType\",\r\n                \"values\": [\r\n                    \"DENY\"\r\n                ]\r\n            },\r\n            {\r\n                \"templateKey\": \"storedRuleType\",\r\n                \"values\": [\r\n                    \"DENY\"\r\n                ]\r\n            },\r\n            {\r\n                \"templateKey\": \"isRuleEnabled\",\r\n                \"values\": [\r\n                    \"true\"\r\n                ]\r\n            }\r\n        ],\r\n        \"policyEnforcements\": [\r\n            {\r\n                \"enforcements\": [\r\n                    {\r\n                        \"enforcementObjectId\": \"50f0c609-2edc-4cdc-8895-9c69ae6ed805\",\r\n                        \"order\": null\r\n                    },\r\n                    {\r\n                        \"enforcementObjectId\": \"2fb26a27-3468-42f3-80f5-cbb7e534dde6\",\r\n                        \"order\": null\r\n                    },\r\n                    {\r\n                        \"enforcementObjectId\": \"c3b2007c-9eec-48ee-a458-177519ada71d\",\r\n                        \"order\": null\r\n                    },\r\n                    {\r\n                        \"enforcementObjectId\": \"25a55a09-0804-4e08-bda6-c4260f64071e\",\r\n                        \"order\": null\r\n                    },\r\n                    {\r\n                        \"enforcementObjectId\": \"1476bedb-03ee-4601-bd0e-08fd37a3100a\",\r\n                        \"order\": null\r\n                    },\r\n                    {\r\n                        \"enforcementObjectId\": \"9ab55036-5db3-456e-986c-ec7dc3055ab6\",\r\n                        \"order\": null\r\n                    },\r\n                    {\r\n                        \"enforcementObjectId\": \"0c3abb51-f751-4442-81ce-6dbf600c7b6a\",\r\n                        \"order\": null\r\n                    },\r\n                    {\r\n                        \"enforcementObjectId\": \"4ca2a93e-aa40-4731-9a98-4f3a676aa512\",\r\n                        \"order\": null\r\n                    }\r\n                ],\r\n                \"stageKey\": \"threatProtection\"\r\n            }\r\n        ],\r\n        \"global\": true,\r\n        \"active\": true,\r\n        \"systemPolicy\": false,\r\n        \"policyActionTemplateKeys\": [\r\n            \"antiVirusFilter\"\r\n        ]\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5555/rest/apigateway/policies/26082318-a173-4858-b8b1-5658d1e9409b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"rest",
+								"apigateway",
+								"policies",
+								"26082318-a173-4858-b8b1-5658d1e9409b"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1563"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"policy\": {\n        \"id\": \"26082318-a173-4858-b8b1-5658d1e9409b\",\n        \"names\": [\n            {\n                \"value\": \"AntiVirusFilter\",\n                \"locale\": \"English\"\n            }\n        ],\n        \"parameters\": [\n            {\n                \"templateKey\": \"customErrorMessage\",\n                \"values\": [\n                    \"\"\n                ]\n            },\n            {\n                \"templateKey\": \"action\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"requestType\",\n                \"values\": [\n                    \"ALL\"\n                ]\n            },\n            {\n                \"templateKey\": \"enableRule\",\n                \"values\": [\n                    \"Disable\"\n                ]\n            },\n            {\n                \"templateKey\": \"rule\",\n                \"values\": [\n                    \"AntiVirusFilter\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleDescription\",\n                \"values\": [\n                    \"\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleName\",\n                \"values\": [\n                    \"AntiVirusFilter\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleType\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"isEnterpriseGatewayLicensed\",\n                \"values\": [\n                    \"true\"\n                ]\n            },\n            {\n                \"templateKey\": \"storedRuleType\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"storedRuleType\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"isRuleEnabled\",\n                \"values\": [\n                    \"true\"\n                ]\n            },\n            {\n                \"templateKey\": \"storedRuleType\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            }\n        ],\n        \"policyEnforcements\": [\n            {\n                \"enforcements\": [\n                    {\n                        \"enforcementObjectId\": \"50f0c609-2edc-4cdc-8895-9c69ae6ed805\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"2fb26a27-3468-42f3-80f5-cbb7e534dde6\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"c3b2007c-9eec-48ee-a458-177519ada71d\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"25a55a09-0804-4e08-bda6-c4260f64071e\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"1476bedb-03ee-4601-bd0e-08fd37a3100a\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"9ab55036-5db3-456e-986c-ec7dc3055ab6\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"0c3abb51-f751-4442-81ce-6dbf600c7b6a\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"4ca2a93e-aa40-4731-9a98-4f3a676aa512\",\n                        \"order\": null\n                    }\n                ],\n                \"stageKey\": \"threatProtection\"\n            }\n        ],\n        \"global\": true,\n        \"active\": true,\n        \"systemPolicy\": false,\n        \"policyActionTemplateKeys\": [\n            \"antiVirusFilter\"\n        ]\n    }\n}"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}
