@@ -1,1 +1,109 @@
 
+{
+	"info": {
+		"_postman_id": "16688baa-51c0-4a79-83d9-f973bfca1678",
+		"name": "update",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5555/rest/apigateway/policies/3425545e-872d-4bc2-9370-e96a5b5e2482",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Test123$",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "single4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n   \"policy\":{  \r\n      \"id\":\"3425545e-872d-4bc2-9370-e96a5b5e2482\",\r\n      \"names\":[  \r\n         {  \r\n            \"value\":\"Alertsettings\",\r\n            \"locale\":\"English\"\r\n         }\r\n      ],\r\n      \"parameters\":[  \r\n         {  \r\n            \"templateKey\":\"customErrorMessage\",\r\n            \"values\":[  \r\n               \"\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"action\",\r\n            \"values\":[  \r\n               \"DENY\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"requestType\",\r\n            \"values\":[  \r\n               \"ALL\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"enableRule\",\r\n            \"values\":[  \r\n               \"Disable\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"rule\",\r\n            \"values\":[  \r\n               \"Alertsettings\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"ruleDescription\",\r\n            \"values\":[  \r\n               \"\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"ruleName\",\r\n            \"values\":[  \r\n               \"Alertsettings\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"ruleType\",\r\n            \"values\":[  \r\n               \"DENY\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"isEnterpriseGatewayLicensed\",\r\n            \"values\":[  \r\n               \"true\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"alertOption\",\r\n            \"parameters\":[  \r\n               {  \r\n                  \"templateKey\":\"alertOnEvery\",\r\n                  \"values\":[  \r\n                     \"false\"\r\n                  ]\r\n               },\r\n               {  \r\n                  \"templateKey\":\"alertInterval\",\r\n                  \"values\":[  \r\n                     \"1\"\r\n                  ]\r\n               },\r\n               {  \r\n                  \"templateKey\":\"alertType\",\r\n                  \"values\":[  \r\n                     \"Email,flowService\"\r\n                  ]\r\n               },\r\n               {  \r\n                  \"templateKey\":\"emailTo\",\r\n                  \"values\":[  \r\n                     \"Revathy.T@softwareag.com\"\r\n                  ]\r\n               },\r\n               {  \r\n                  \"templateKey\":\"flowServiceName\",\r\n                  \"values\":[  \r\n                     \"pub.apigateway.threatProtection:violationListener\"\r\n                  ]\r\n               },\r\n               {  \r\n                  \"templateKey\":\"runAsUser\",\r\n                  \"values\":[  \r\n                     \"Administrator\"\r\n                  ]\r\n               }\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"isRuleEnabled\",\r\n            \"values\":[  \r\n               \"true\"\r\n            ]\r\n         }\r\n      ],\r\n      \"policyEnforcements\":[  \r\n         {  \r\n            \"enforcements\":[  \r\n               {  \r\n                  \"enforcementObjectId\":\"f95f403f-8055-48cb-801b-54b1d34b3a17\",\r\n                  \"order\":null\r\n               },\r\n               {  \r\n                  \"enforcementObjectId\":\"968eaa88-10c2-4257-9206-428f9dbf8e68\",\r\n                  \"order\":null\r\n               },\r\n               {  \r\n                  \"enforcementObjectId\":\"3934424a-a908-4b1c-9217-e483d39c602b\",\r\n                  \"order\":null\r\n               },\r\n               {  \r\n                  \"enforcementObjectId\":\"a31972de-ef1d-465f-aba8-15cc83a3f6ea\",\r\n                  \"order\":null\r\n               },\r\n               {  \r\n                  \"enforcementObjectId\":\"cea299a5-27f4-459f-bca8-b9f32c5a264a\",\r\n                  \"order\":null\r\n               },\r\n               {  \r\n                  \"enforcementObjectId\":\"78258386-588a-45de-9d21-5cebee210242\",\r\n                  \"order\":null\r\n               },\r\n               {  \r\n                  \"enforcementObjectId\":\"247e9747-5320-4086-85e5-529e9a39c140\",\r\n                  \"order\":null\r\n               },\r\n               {  \r\n                  \"enforcementObjectId\":\"992df5c3-b603-4dae-b1c7-f7a8c11f620d\",\r\n                  \"order\":null\r\n               }\r\n            ],\r\n            \"stageKey\":\"threatProtection\"\r\n         }\r\n      ],\r\n      \"global\":true,\r\n      \"active\":true,\r\n      \"systemPolicy\":false\r\n   }\r\n}"
+				},
+				"url": {
+					"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/policies/3425545e-872d-4bc2-9370-e96a5b5e2482",
+					"protocol": "http",
+					"host": [
+						"single4",
+						"gateway",
+						"webmcloud",
+						"com"
+					],
+					"path": [
+						"rest",
+						"apigateway",
+						"policies",
+						"3425545e-872d-4bc2-9370-e96a5b5e2482"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "enabled",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \r\n   \"policy\":{  \r\n      \"id\":\"3425545e-872d-4bc2-9370-e96a5b5e2482\",\r\n      \"names\":[  \r\n         {  \r\n            \"value\":\"Alertsettings\",\r\n            \"locale\":\"English\"\r\n         }\r\n      ],\r\n      \"parameters\":[  \r\n         {  \r\n            \"templateKey\":\"customErrorMessage\",\r\n            \"values\":[  \r\n               \"\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"action\",\r\n            \"values\":[  \r\n               \"DENY\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"requestType\",\r\n            \"values\":[  \r\n               \"ALL\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"enableRule\",\r\n            \"values\":[  \r\n               \"Disable\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"rule\",\r\n            \"values\":[  \r\n               \"Alertsettings\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"ruleDescription\",\r\n            \"values\":[  \r\n               \"\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"ruleName\",\r\n            \"values\":[  \r\n               \"Alertsettings\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"ruleType\",\r\n            \"values\":[  \r\n               \"DENY\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"isEnterpriseGatewayLicensed\",\r\n            \"values\":[  \r\n               \"true\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"alertOption\",\r\n            \"parameters\":[  \r\n               {  \r\n                  \"templateKey\":\"alertOnEvery\",\r\n                  \"values\":[  \r\n                     \"false\"\r\n                  ]\r\n               },\r\n               {  \r\n                  \"templateKey\":\"alertInterval\",\r\n                  \"values\":[  \r\n                     \"1\"\r\n                  ]\r\n               },\r\n               {  \r\n                  \"templateKey\":\"alertType\",\r\n                  \"values\":[  \r\n                     \"Email,flowService\"\r\n                  ]\r\n               },\r\n               {  \r\n                  \"templateKey\":\"emailTo\",\r\n                  \"values\":[  \r\n                     \"Revathy.T@softwareag.com\"\r\n                  ]\r\n               },\r\n               {  \r\n                  \"templateKey\":\"flowServiceName\",\r\n                  \"values\":[  \r\n                     \"pub.apigateway.threatProtection:violationListener\"\r\n                  ]\r\n               },\r\n               {  \r\n                  \"templateKey\":\"runAsUser\",\r\n                  \"values\":[  \r\n                     \"Administrator\"\r\n                  ]\r\n               }\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"isRuleEnabled\",\r\n            \"values\":[  \r\n               \"true\"\r\n            ]\r\n         }\r\n      ],\r\n      \"policyEnforcements\":[  \r\n         {  \r\n            \"enforcements\":[  \r\n               {  \r\n                  \"enforcementObjectId\":\"f95f403f-8055-48cb-801b-54b1d34b3a17\",\r\n                  \"order\":null\r\n               },\r\n               {  \r\n                  \"enforcementObjectId\":\"968eaa88-10c2-4257-9206-428f9dbf8e68\",\r\n                  \"order\":null\r\n               },\r\n               {  \r\n                  \"enforcementObjectId\":\"3934424a-a908-4b1c-9217-e483d39c602b\",\r\n                  \"order\":null\r\n               },\r\n               {  \r\n                  \"enforcementObjectId\":\"a31972de-ef1d-465f-aba8-15cc83a3f6ea\",\r\n                  \"order\":null\r\n               },\r\n               {  \r\n                  \"enforcementObjectId\":\"cea299a5-27f4-459f-bca8-b9f32c5a264a\",\r\n                  \"order\":null\r\n               },\r\n               {  \r\n                  \"enforcementObjectId\":\"78258386-588a-45de-9d21-5cebee210242\",\r\n                  \"order\":null\r\n               },\r\n               {  \r\n                  \"enforcementObjectId\":\"247e9747-5320-4086-85e5-529e9a39c140\",\r\n                  \"order\":null\r\n               },\r\n               {  \r\n                  \"enforcementObjectId\":\"992df5c3-b603-4dae-b1c7-f7a8c11f620d\",\r\n                  \"order\":null\r\n               }\r\n            ],\r\n            \"stageKey\":\"threatProtection\"\r\n         }\r\n      ],\r\n      \"global\":true,\r\n      \"active\":true,\r\n      \"systemPolicy\":false\r\n   }\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5555/rest/apigateway/policies/3425545e-872d-4bc2-9370-e96a5b5e2482",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"rest",
+								"apigateway",
+								"policies",
+								"3425545e-872d-4bc2-9370-e96a5b5e2482"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1825"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"policy\": {\n        \"id\": \"3425545e-872d-4bc2-9370-e96a5b5e2482\",\n        \"names\": [\n            {\n                \"value\": \"Alertsettings\",\n                \"locale\": \"English\"\n            }\n        ],\n        \"parameters\": [\n            {\n                \"templateKey\": \"customErrorMessage\",\n                \"values\": [\n                    \"\"\n                ]\n            },\n            {\n                \"templateKey\": \"action\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"requestType\",\n                \"values\": [\n                    \"ALL\"\n                ]\n            },\n            {\n                \"templateKey\": \"enableRule\",\n                \"values\": [\n                    \"Disable\"\n                ]\n            },\n            {\n                \"templateKey\": \"rule\",\n                \"values\": [\n                    \"Alertsettings\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleDescription\",\n                \"values\": [\n                    \"\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleName\",\n                \"values\": [\n                    \"Alertsettings\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleType\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"isEnterpriseGatewayLicensed\",\n                \"values\": [\n                    \"true\"\n                ]\n            },\n            {\n                \"templateKey\": \"alertOption\",\n                \"parameters\": [\n                    {\n                        \"templateKey\": \"alertOnEvery\",\n                        \"values\": [\n                            \"false\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"alertInterval\",\n                        \"values\": [\n                            \"1\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"alertType\",\n                        \"values\": [\n                            \"Email,flowService\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"emailTo\",\n                        \"values\": [\n                            \"Revathy.T@softwareag.com\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"flowServiceName\",\n                        \"values\": [\n                            \"pub.apigateway.threatProtection:violationListener\"\n                        ]\n                    },\n                    {\n                        \"templateKey\": \"runAsUser\",\n                        \"values\": [\n                            \"Administrator\"\n                        ]\n                    }\n                ]\n            },\n            {\n                \"templateKey\": \"isRuleEnabled\",\n                \"values\": [\n                    \"true\"\n                ]\n            },\n            {\n                \"templateKey\": \"storedRuleType\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            }\n        ],\n        \"policyEnforcements\": [\n            {\n                \"enforcements\": [\n                    {\n                        \"enforcementObjectId\": \"f95f403f-8055-48cb-801b-54b1d34b3a17\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"968eaa88-10c2-4257-9206-428f9dbf8e68\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"3934424a-a908-4b1c-9217-e483d39c602b\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"a31972de-ef1d-465f-aba8-15cc83a3f6ea\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"cea299a5-27f4-459f-bca8-b9f32c5a264a\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"78258386-588a-45de-9d21-5cebee210242\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"247e9747-5320-4086-85e5-529e9a39c140\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"992df5c3-b603-4dae-b1c7-f7a8c11f620d\",\n                        \"order\": null\n                    }\n                ],\n                \"stageKey\": \"threatProtection\"\n            }\n        ],\n        \"global\": true,\n        \"active\": true,\n        \"systemPolicy\": false\n    }\n}"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}
