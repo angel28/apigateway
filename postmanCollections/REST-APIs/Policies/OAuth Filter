@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "d0fe5bd3-6450-4604-b8cd-c88bb1a4467e",
+		"name": "create",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://single4.gateway.webmcloud.com/rest/apigateway/policies/c1d0a4e8-be57-4d36-9755-112561f7531f",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Test123$",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "single4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n   \"policy\":{  \r\n      \"id\":\"c1d0a4e8-be57-4d36-9755-112561f7531f\",\r\n      \"names\":[  \r\n         {  \r\n            \"value\":\"OAuthFilter\",\r\n            \"locale\":\"English\"\r\n         }\r\n      ],\r\n      \"parameters\":[  \r\n         {  \r\n            \"templateKey\":\"customErrorMessage\",\r\n            \"values\":[  \r\n               \"\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"action\",\r\n            \"values\":[  \r\n               \"DENY\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"requestType\",\r\n            \"values\":[  \r\n               \"ALL\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"enableRule\",\r\n            \"values\":[  \r\n               \"Disable\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"rule\",\r\n            \"values\":[  \r\n               \"OAuthFilter\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"ruleDescription\",\r\n            \"values\":[  \r\n               \"\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"ruleName\",\r\n            \"values\":[  \r\n               \"OAuthFilter\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"ruleType\",\r\n            \"values\":[  \r\n               \"DENY\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"index\",\r\n            \"values\":[  \r\n               \"0\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"isEnterpriseGatewayLicensed\",\r\n            \"values\":[  \r\n               \"true\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"storedRuleType\",\r\n            \"values\":[  \r\n               \"DENY\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"storedRuleType\",\r\n            \"values\":[  \r\n               \"DENY\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"storedRuleType\",\r\n            \"values\":[  \r\n               \"DENY\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"isRuleEnabled\",\r\n            \"values\":[  \r\n               \"true\"\r\n            ]\r\n         }\r\n      ],\r\n      \"policyEnforcements\":[  \r\n         {  \r\n            \"enforcements\":[  \r\n               {  \r\n                  \"enforcementObjectId\":\"2cf5f776-3b5d-43b0-90f4-545ef0d5d9eb\",\r\n                  \"order\":null\r\n               },\r\n               {  \r\n                  \"enforcementObjectId\":\"cf26eabe-e9db-4954-8065-152a26b0f53e\",\r\n                  \"order\":null\r\n               },\r\n               {  \r\n                  \"enforcementObjectId\":\"f24742a3-fddb-4f17-9037-44b29fb6f0e0\",\r\n                  \"order\":null\r\n               },\r\n               {  \r\n                  \"enforcementObjectId\":\"f771e7a4-1e1d-4f9f-a10a-62dbd213a058\",\r\n                  \"order\":null\r\n               },\r\n               {  \r\n                  \"enforcementObjectId\":\"6ac46707-5bbe-48f3-b574-3bca2b0d0b6f\",\r\n                  \"order\":null\r\n               },\r\n               {  \r\n                  \"enforcementObjectId\":\"0fa3ab08-ac3b-4963-b876-862df4194ad8\",\r\n                  \"order\":null\r\n               },\r\n               {  \r\n                  \"enforcementObjectId\":\"0afbb8e2-73fe-4fcb-997a-678dd5f8af5d\",\r\n                  \"order\":null\r\n               },\r\n               {  \r\n                  \"enforcementObjectId\":\"799f1567-b105-4745-aff1-47b4d580f139\",\r\n                  \"order\":null\r\n               }\r\n            ],\r\n            \"stageKey\":\"threatProtection\"\r\n         }\r\n      ],\r\n      \"global\":true,\r\n      \"active\":true,\r\n      \"systemPolicy\":false\r\n   }\r\n}"
+				},
+				"url": {
+					"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/policies/c1d0a4e8-be57-4d36-9755-112561f7531f",
+					"protocol": "http",
+					"host": [
+						"single4",
+						"gateway",
+						"webmcloud",
+						"com"
+					],
+					"path": [
+						"rest",
+						"apigateway",
+						"policies",
+						"c1d0a4e8-be57-4d36-9755-112561f7531f"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "enabled",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \r\n   \"policy\":{  \r\n      \"id\":\"c1d0a4e8-be57-4d36-9755-112561f7531f\",\r\n      \"names\":[  \r\n         {  \r\n            \"value\":\"OAuthFilter\",\r\n            \"locale\":\"English\"\r\n         }\r\n      ],\r\n      \"parameters\":[  \r\n         {  \r\n            \"templateKey\":\"customErrorMessage\",\r\n            \"values\":[  \r\n               \"\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"action\",\r\n            \"values\":[  \r\n               \"DENY\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"requestType\",\r\n            \"values\":[  \r\n               \"ALL\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"enableRule\",\r\n            \"values\":[  \r\n               \"Disable\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"rule\",\r\n            \"values\":[  \r\n               \"OAuthFilter\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"ruleDescription\",\r\n            \"values\":[  \r\n               \"\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"ruleName\",\r\n            \"values\":[  \r\n               \"OAuthFilter\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"ruleType\",\r\n            \"values\":[  \r\n               \"DENY\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"index\",\r\n            \"values\":[  \r\n               \"0\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"isEnterpriseGatewayLicensed\",\r\n            \"values\":[  \r\n               \"true\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"storedRuleType\",\r\n            \"values\":[  \r\n               \"DENY\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"storedRuleType\",\r\n            \"values\":[  \r\n               \"DENY\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"storedRuleType\",\r\n            \"values\":[  \r\n               \"DENY\"\r\n            ]\r\n         },\r\n         {  \r\n            \"templateKey\":\"isRuleEnabled\",\r\n            \"values\":[  \r\n               \"true\"\r\n            ]\r\n         }\r\n      ],\r\n      \"policyEnforcements\":[  \r\n         {  \r\n            \"enforcements\":[  \r\n               {  \r\n                  \"enforcementObjectId\":\"2cf5f776-3b5d-43b0-90f4-545ef0d5d9eb\",\r\n                  \"order\":null\r\n               },\r\n               {  \r\n                  \"enforcementObjectId\":\"cf26eabe-e9db-4954-8065-152a26b0f53e\",\r\n                  \"order\":null\r\n               },\r\n               {  \r\n                  \"enforcementObjectId\":\"f24742a3-fddb-4f17-9037-44b29fb6f0e0\",\r\n                  \"order\":null\r\n               },\r\n               {  \r\n                  \"enforcementObjectId\":\"f771e7a4-1e1d-4f9f-a10a-62dbd213a058\",\r\n                  \"order\":null\r\n               },\r\n               {  \r\n                  \"enforcementObjectId\":\"6ac46707-5bbe-48f3-b574-3bca2b0d0b6f\",\r\n                  \"order\":null\r\n               },\r\n               {  \r\n                  \"enforcementObjectId\":\"0fa3ab08-ac3b-4963-b876-862df4194ad8\",\r\n                  \"order\":null\r\n               },\r\n               {  \r\n                  \"enforcementObjectId\":\"0afbb8e2-73fe-4fcb-997a-678dd5f8af5d\",\r\n                  \"order\":null\r\n               },\r\n               {  \r\n                  \"enforcementObjectId\":\"799f1567-b105-4745-aff1-47b4d580f139\",\r\n                  \"order\":null\r\n               }\r\n            ],\r\n            \"stageKey\":\"threatProtection\"\r\n         }\r\n      ],\r\n      \"global\":true,\r\n      \"active\":true,\r\n      \"systemPolicy\":false\r\n   }\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5555/rest/apigateway/policies/c1d0a4e8-be57-4d36-9755-112561f7531f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5555",
+							"path": [
+								"rest",
+								"apigateway",
+								"policies",
+								"c1d0a4e8-be57-4d36-9755-112561f7531f"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1594"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"policy\": {\n        \"id\": \"c1d0a4e8-be57-4d36-9755-112561f7531f\",\n        \"names\": [\n            {\n                \"value\": \"OAuthFilter\",\n                \"locale\": \"English\"\n            }\n        ],\n        \"parameters\": [\n            {\n                \"templateKey\": \"customErrorMessage\",\n                \"values\": [\n                    \"\"\n                ]\n            },\n            {\n                \"templateKey\": \"action\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"requestType\",\n                \"values\": [\n                    \"ALL\"\n                ]\n            },\n            {\n                \"templateKey\": \"enableRule\",\n                \"values\": [\n                    \"Disable\"\n                ]\n            },\n            {\n                \"templateKey\": \"rule\",\n                \"values\": [\n                    \"OAuthFilter\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleDescription\",\n                \"values\": [\n                    \"\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleName\",\n                \"values\": [\n                    \"OAuthFilter\"\n                ]\n            },\n            {\n                \"templateKey\": \"ruleType\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"index\",\n                \"values\": [\n                    \"0\"\n                ]\n            },\n            {\n                \"templateKey\": \"isEnterpriseGatewayLicensed\",\n                \"values\": [\n                    \"true\"\n                ]\n            },\n            {\n                \"templateKey\": \"storedRuleType\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"storedRuleType\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"storedRuleType\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            },\n            {\n                \"templateKey\": \"isRuleEnabled\",\n                \"values\": [\n                    \"true\"\n                ]\n            },\n            {\n                \"templateKey\": \"storedRuleType\",\n                \"values\": [\n                    \"DENY\"\n                ]\n            }\n        ],\n        \"policyEnforcements\": [\n            {\n                \"enforcements\": [\n                    {\n                        \"enforcementObjectId\": \"2cf5f776-3b5d-43b0-90f4-545ef0d5d9eb\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"cf26eabe-e9db-4954-8065-152a26b0f53e\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"f24742a3-fddb-4f17-9037-44b29fb6f0e0\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"f771e7a4-1e1d-4f9f-a10a-62dbd213a058\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"6ac46707-5bbe-48f3-b574-3bca2b0d0b6f\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"0fa3ab08-ac3b-4963-b876-862df4194ad8\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"0afbb8e2-73fe-4fcb-997a-678dd5f8af5d\",\n                        \"order\": null\n                    },\n                    {\n                        \"enforcementObjectId\": \"799f1567-b105-4745-aff1-47b4d580f139\",\n                        \"order\": null\n                    }\n                ],\n                \"stageKey\": \"threatProtection\"\n            }\n        ],\n        \"global\": true,\n        \"active\": true,\n        \"systemPolicy\": false\n    }\n}"
+				}
+			]
+		}
+	],
+	"protocolProfileBehavior": {}
+}
