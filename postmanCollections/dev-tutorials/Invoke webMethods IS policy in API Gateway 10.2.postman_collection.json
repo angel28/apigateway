@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "2290b9a5-5edf-4dac-b3bb-4afe5bde851a",
+		"name": "Invoke webMethods IS policy in API Gateway 10.2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://single4.gateway.webmcloud.com/gateway/EmployeeService%20Invoke%20Is/1.0.0/employee",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "Test@123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "single4",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://single4.gateway.webmcloud.com/gateway/EmployeeService%20Invoke%20Is/1.0.0/employee",
+					"protocol": "http",
+					"host": [
+						"single4",
+						"gateway",
+						"webmcloud",
+						"com"
+					],
+					"path": [
+						"gateway",
+						"EmployeeService%20Invoke%20Is",
+						"1.0.0",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "0ad2f405-a50b-4301-957a-82b4d0386612",
+		"name": "Securing APIs using JSON Web Token",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Invoking API without using JSON Web Token",
+			"item": [
+				{
+					"name": "http://single4.gateway.webmcloud.com/gateway/EmployeeService/1.0.0/employee",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Gateway-APIKey",
+								"value": "dd8bdbda-4ff4-4fca-b4f3-4b1528d37596",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/gateway/EmployeeService/1.0.0/employee",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"gateway",
+								"EmployeeService",
+								"1.0.0",
+								"employee"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Accessing  JSON Web Token",
+			"item": [
+				{
+					"name": "http://single4.gateway.webmcloud.com/gateway/security/getJsonWebToken",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Gateway-APIKey",
+								"value": "171ae096-ab61-4fe6-a513-06d695966422",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"claimsSet\": { \"name\": \"Ambrish\", \"company\": \"sag\" } }"
+						},
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/gateway/security/getJsonWebToken",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"gateway",
+								"security",
+								"getJsonWebToken"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "4daaa956-a227-4779-ab1a-0ad4be3344ee",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "2e5ec10b-a8eb-44fe-bccd-24e58f70332d",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Invoking API using ThirdParty JSON Web Token",
+			"item": [
+				{
+					"name": "http://single4.gateway.webmcloud.com/gateway/EmployeeService/1.0.0/employee",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJraWQiOiJzc29zIiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiJmODFmOTk5Ni1mYTMxLTRjNzUtODUyMS01YjIyOWViNTUyNzkiLCJhdWQiOiJzYWciLCJuYW1lIjoiQW1icmlzaCIsImlzcyI6Im15Y29tcGFueS5jb20iLCJjb21wYW55Ijoic2FnIiwiZXhwIjoxNTYyMDQ3MDg5LCJpYXQiOjE1NjIwNDM0ODl9.P-A5135qTKIrnZrPzxImVZa8nXfUAhi3dIg7uKKQTfdX4zb7tlrJQuro7HfvdXYivtznxEOOyAHQhn3qYg-AkxRRFDGfuLRaAiR8MHGa2wQO_s3eBE8KFx71-FMai201e_Egf3yUFTFxO5uuOugDzQO6sH0-Jsqm65QLVEVG2Sksl00TBikfEW3nWMI0VCPMHtl_iYIf0W92SC0A1opkTbpTM9KlNDBsPsDn4M2nH-hrEZsXaeCG1fVudlrfEsIK8knHbExcnyeCXTnslGgueYgvtdZbu2LRtW83myRryA78-4hJzgLIF3anTQ8aVhbPZSd0Xrgbl74VDumT4XuRYA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/gateway/EmployeeService/1.0.0/employee",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"gateway",
+								"EmployeeService",
+								"1.0.0",
+								"employee"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

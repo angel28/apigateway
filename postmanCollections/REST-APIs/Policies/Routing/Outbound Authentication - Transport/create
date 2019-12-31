@@ -1,12 +1,26 @@
 {
 	"info": {
-		"_postman_id": "4317840e-8a77-4c45-9590-d5f15f2814c7",
+		"_postman_id": "d0fe5bd3-6450-4604-b8cd-c88bb1a4467e",
 		"name": "create",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
 			"name": "\thttp://single4.gateway.webmcloud.com/rest/apigateway/policyActions",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d6389dea-57c2-4f0b-93c6-44d165bfcc9e",
+						"exec": [
+							"var jsonData = pm.response.json();\r",
+							"\r",
+							"pm.environment.set(\"policyActionIdOutBoundAuthentication\", jsonData.policyAction.id);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"auth": {
 					"type": "basic",
@@ -33,7 +47,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"policyAction\": {\n       \n        \"names\": [\n            {\n                \"value\": \"Straight Through Routing\",\n                \"locale\": \"en\"\n            }\n        ],\n        \"descriptions\": [\n            {\n                \"value\": \"\",\n                \"locale\": \"English\"\n            }\n        ],\n        \"templateKey\": \"straightThroughRouting\",\n        \"parameters\": [\n            {\n                \"templateKey\": \"endpointUri\",\n                \"values\": [\n                    \"http://localhost:5555/rest/employeemanager/${sys:resource_path}\"\n                ]\n            }\n        ],\n        \"active\": false\n    }\n}"
+					"raw": "{\r\n    \"policyAction\": {\r\n       \r\n        \"names\": [\r\n            {\r\n                \"value\": \"Outbound Authentication - Transport\",\r\n                \"locale\": \"en\"\r\n            }\r\n        ],\r\n        \"templateKey\": \"outboundTransportAuthentication\",\r\n        \"parameters\": [\r\n            {\r\n                \"templateKey\": \"transportSecurity\",\r\n                \"parameters\": [\r\n                    {\r\n                        \"templateKey\": \"authType\",\r\n                        \"values\": [\r\n                            \"HTTP_BASIC\"\r\n                        ]\r\n                    },\r\n                    {\r\n                        \"templateKey\": \"authMode\",\r\n                        \"values\": [\r\n                            \"NEW\"\r\n                        ]\r\n                    },\r\n                    {\r\n                        \"templateKey\": \"httpAuthCredentials\",\r\n                        \"parameters\": [\r\n                            {\r\n                                \"templateKey\": \"userName\",\r\n                                \"values\": [\r\n                                    \"single4\"\r\n                                ]\r\n                            },\r\n                            {\r\n                                \"templateKey\": \"password\",\r\n                                \"values\": [\r\n                                    \"KioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKio=\"\r\n                                ]\r\n                            }\r\n                        ]\r\n                    }\r\n                ]\r\n            }\r\n        ],\r\n        \"active\": false\r\n    }\r\n}"
 				},
 				"url": {
 					"raw": "http://single4.gateway.webmcloud.com/rest/apigateway/policyActions",
@@ -113,5 +127,6 @@
 				}
 			]
 		}
-	]
+	],
+	"protocolProfileBehavior": {}
 }

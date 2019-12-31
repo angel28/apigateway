@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "fb2cf057-d510-47ab-862d-d56cbfd82f3a",
+		"name": "Conditional Error Processing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Conditional Error Processing handles HTTP Status code 500",
+			"item": [
+				{
+					"name": "http://single4.gateway.webmcloud.com/gateway/Employee%20REST%20Service%20CEP/1.0/employeeService/",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Test123$",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "single4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/gateway/Employee%20REST%20Service%20CEP/1.0/employeeService/",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"gateway",
+								"Employee%20REST%20Service%20CEP",
+								"1.0",
+								"employeeService",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "6d0a8986-0252-4270-8f86-51abeaaad160",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "dd9b5017-e52a-4282-9314-8ac27c2e380e",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Conditional Error Processing handles HTTP Status code 404",
+			"item": [
+				{
+					"name": "http://single4.gateway.webmcloud.com/gateway/Employee%20REST%20Service%20CEP/1.0/employeeService/",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "Test123$",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "single4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://single4.gateway.webmcloud.com/gateway/Employee%20REST%20Service%20CEP/2.0/employeeService/71",
+							"protocol": "http",
+							"host": [
+								"single4",
+								"gateway",
+								"webmcloud",
+								"com"
+							],
+							"path": [
+								"gateway",
+								"Employee%20REST%20Service%20CEP",
+								"2.0",
+								"employeeService",
+								"71"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
